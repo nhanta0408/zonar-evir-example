@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE7137401A334C01B838F65E /* Pods_ZonarEvirExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4C028F4C48DA18ACB33B81 /* Pods_ZonarEvirExample.framework */; };
 		B5F3DA9427B6869F0058D7B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3DA9327B6869F0058D7B4 /* AppDelegate.swift */; };
 		B5F3DA9627B6869F0058D7B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3DA9527B6869F0058D7B4 /* SceneDelegate.swift */; };
 		B5F3DA9827B6869F0058D7B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3DA9727B6869F0058D7B4 /* ViewController.swift */; };
@@ -14,9 +15,12 @@
 		B5F3DA9E27B6869F0058D7B4 /* ZonarEvirExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5F3DA9C27B6869F0058D7B4 /* ZonarEvirExample.xcdatamodeld */; };
 		B5F3DAA027B6869F0058D7B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F3DA9F27B6869F0058D7B4 /* Assets.xcassets */; };
 		B5F3DAA327B6869F0058D7B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F3DAA127B6869F0058D7B4 /* LaunchScreen.storyboard */; };
+		B5F3DAB727B6AD540058D7B4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3DAB627B6AD540058D7B4 /* HomeViewController.swift */; };
+		B5F3DABA27B6B0A70058D7B4 /* AssetCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3DAB927B6B0A70058D7B4 /* AssetCardCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		286C3DF4ABC7C8E91307A587 /* Pods-ZonarEvirExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZonarEvirExample.release.xcconfig"; path = "Target Support Files/Pods-ZonarEvirExample/Pods-ZonarEvirExample.release.xcconfig"; sourceTree = "<group>"; };
 		B5F3DA9027B6869F0058D7B4 /* ZonarEvirExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZonarEvirExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5F3DA9327B6869F0058D7B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5F3DA9527B6869F0058D7B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +30,10 @@
 		B5F3DA9F27B6869F0058D7B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5F3DAA227B6869F0058D7B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5F3DAA427B6869F0058D7B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5F3DAB627B6AD540058D7B4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B5F3DAB927B6B0A70058D7B4 /* AssetCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetCardCell.swift; sourceTree = "<group>"; };
+		C865DCEF2954CC48CDE3A70C /* Pods-ZonarEvirExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZonarEvirExample.debug.xcconfig"; path = "Target Support Files/Pods-ZonarEvirExample/Pods-ZonarEvirExample.debug.xcconfig"; sourceTree = "<group>"; };
+		DD4C028F4C48DA18ACB33B81 /* Pods_ZonarEvirExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZonarEvirExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE7137401A334C01B838F65E /* Pods_ZonarEvirExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16431DBDD5379CFD02C5C34F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C865DCEF2954CC48CDE3A70C /* Pods-ZonarEvirExample.debug.xcconfig */,
+				286C3DF4ABC7C8E91307A587 /* Pods-ZonarEvirExample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AA3923F1652CED2A684ABFB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD4C028F4C48DA18ACB33B81 /* Pods_ZonarEvirExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B5F3DA8727B6869F0058D7B4 = {
 			isa = PBXGroup;
 			children = (
 				B5F3DA9227B6869F0058D7B4 /* ZonarEvirExample */,
 				B5F3DA9127B6869F0058D7B4 /* Products */,
+				16431DBDD5379CFD02C5C34F /* Pods */,
+				AA3923F1652CED2A684ABFB5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +86,106 @@
 		B5F3DA9227B6869F0058D7B4 /* ZonarEvirExample */ = {
 			isa = PBXGroup;
 			children = (
+				B5F3DAAC27B68C6C0058D7B4 /* Modules */,
+				B5F3DAAB27B68C5E0058D7B4 /* App */,
+				B5F3DAAA27B68C540058D7B4 /* Storyboards */,
 				B5F3DA9327B6869F0058D7B4 /* AppDelegate.swift */,
 				B5F3DA9527B6869F0058D7B4 /* SceneDelegate.swift */,
 				B5F3DA9727B6869F0058D7B4 /* ViewController.swift */,
-				B5F3DA9927B6869F0058D7B4 /* Main.storyboard */,
-				B5F3DA9F27B6869F0058D7B4 /* Assets.xcassets */,
-				B5F3DAA127B6869F0058D7B4 /* LaunchScreen.storyboard */,
 				B5F3DAA427B6869F0058D7B4 /* Info.plist */,
 				B5F3DA9C27B6869F0058D7B4 /* ZonarEvirExample.xcdatamodeld */,
 			);
 			path = ZonarEvirExample;
+			sourceTree = "<group>";
+		};
+		B5F3DAAA27B68C540058D7B4 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B5F3DA9927B6869F0058D7B4 /* Main.storyboard */,
+				B5F3DAA127B6869F0058D7B4 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B5F3DAAB27B68C5E0058D7B4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B5F3DA9F27B6869F0058D7B4 /* Assets.xcassets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B5F3DAAC27B68C6C0058D7B4 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B5F3DAB127B68CAA0058D7B4 /* Model */,
+				B5F3DAB027B68CA30058D7B4 /* ViewModel */,
+				B5F3DAAF27B68C990058D7B4 /* DomainModel */,
+				B5F3DAAE27B68C920058D7B4 /* Views */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		B5F3DAAE27B68C920058D7B4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B5F3DAB327B68CC90058D7B4 /* Controller */,
+				B5F3DAB227B68CC40058D7B4 /* View */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B5F3DAAF27B68C990058D7B4 /* DomainModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DomainModel;
+			sourceTree = "<group>";
+		};
+		B5F3DAB027B68CA30058D7B4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B5F3DAB127B68CAA0058D7B4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B5F3DAB227B68CC40058D7B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5F3DAB927B6B0A70058D7B4 /* AssetCardCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B5F3DAB327B68CC90058D7B4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B5F3DAB427B6AC9D0058D7B4 /* Home */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B5F3DAB427B6AC9D0058D7B4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B5F3DAB527B6AD450058D7B4 /* HomeView */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B5F3DAB527B6AD450058D7B4 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				B5F3DAB627B6AD540058D7B4 /* HomeViewController.swift */,
+			);
+			path = HomeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +195,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5F3DAA727B6869F0058D7B4 /* Build configuration list for PBXNativeTarget "ZonarEvirExample" */;
 			buildPhases = (
+				96C19305CE11BFE6DCC82D34 /* [CP] Check Pods Manifest.lock */,
 				B5F3DA8C27B6869F0058D7B4 /* Sources */,
 				B5F3DA8D27B6869F0058D7B4 /* Frameworks */,
 				B5F3DA8E27B6869F0058D7B4 /* Resources */,
@@ -136,12 +255,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		96C19305CE11BFE6DCC82D34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZonarEvirExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B5F3DA8C27B6869F0058D7B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5F3DAB727B6AD540058D7B4 /* HomeViewController.swift in Sources */,
 				B5F3DA9827B6869F0058D7B4 /* ViewController.swift in Sources */,
+				B5F3DABA27B6B0A70058D7B4 /* AssetCardCell.swift in Sources */,
 				B5F3DA9E27B6869F0058D7B4 /* ZonarEvirExample.xcdatamodeld in Sources */,
 				B5F3DA9427B6869F0058D7B4 /* AppDelegate.swift in Sources */,
 				B5F3DA9627B6869F0058D7B4 /* SceneDelegate.swift in Sources */,
@@ -288,6 +434,7 @@
 		};
 		B5F3DAA827B6869F0058D7B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C865DCEF2954CC48CDE3A70C /* Pods-ZonarEvirExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -316,6 +463,7 @@
 		};
 		B5F3DAA927B6869F0058D7B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 286C3DF4ABC7C8E91307A587 /* Pods-ZonarEvirExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
