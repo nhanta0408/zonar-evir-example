@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		AE7137401A334C01B838F65E /* Pods_ZonarEvirExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4C028F4C48DA18ACB33B81 /* Pods_ZonarEvirExample.framework */; };
+		B507E31E27BAB49D00456354 /* NavigationBarCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = B507E31D27BAB49D00456354 /* NavigationBarCustom.swift */; };
+		B507E32027BAB87300456354 /* HeaderBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B507E31F27BAB87300456354 /* HeaderBar.swift */; };
+		B507E32227BAB8EC00456354 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B507E32127BAB8EC00456354 /* UIView+Extensions.swift */; };
+		B564519727BA0EE300CC35F7 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B564519627BA0EE300CC35F7 /* ThemeManager.swift */; };
+		B564519927BA0F2900CC35F7 /* EvirTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B564519827BA0F2900CC35F7 /* EvirTheme.swift */; };
+		B564519B27BA0F5B00CC35F7 /* ContinentalTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B564519A27BA0F5B00CC35F7 /* ContinentalTheme.swift */; };
+		B564519F27BA102700CC35F7 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B564519E27BA102700CC35F7 /* UIColor+Extensions.swift */; };
+		B56451A227BA591000CC35F7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56451A127BA591000CC35F7 /* Constants.swift */; };
 		B5F3DA9427B6869F0058D7B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3DA9327B6869F0058D7B4 /* AppDelegate.swift */; };
 		B5F3DA9627B6869F0058D7B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3DA9527B6869F0058D7B4 /* SceneDelegate.swift */; };
 		B5F3DA9827B6869F0058D7B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3DA9727B6869F0058D7B4 /* ViewController.swift */; };
@@ -17,10 +25,19 @@
 		B5F3DAA327B6869F0058D7B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F3DAA127B6869F0058D7B4 /* LaunchScreen.storyboard */; };
 		B5F3DAB727B6AD540058D7B4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3DAB627B6AD540058D7B4 /* HomeViewController.swift */; };
 		B5F3DABA27B6B0A70058D7B4 /* AssetCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3DAB927B6B0A70058D7B4 /* AssetCardCell.swift */; };
+		B5F3DABC27BA05F30058D7B4 /* LastInspectionHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3DABB27BA05F30058D7B4 /* LastInspectionHomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		286C3DF4ABC7C8E91307A587 /* Pods-ZonarEvirExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZonarEvirExample.release.xcconfig"; path = "Target Support Files/Pods-ZonarEvirExample/Pods-ZonarEvirExample.release.xcconfig"; sourceTree = "<group>"; };
+		B507E31D27BAB49D00456354 /* NavigationBarCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarCustom.swift; sourceTree = "<group>"; };
+		B507E31F27BAB87300456354 /* HeaderBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderBar.swift; sourceTree = "<group>"; };
+		B507E32127BAB8EC00456354 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		B564519627BA0EE300CC35F7 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		B564519827BA0F2900CC35F7 /* EvirTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvirTheme.swift; sourceTree = "<group>"; };
+		B564519A27BA0F5B00CC35F7 /* ContinentalTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentalTheme.swift; sourceTree = "<group>"; };
+		B564519E27BA102700CC35F7 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		B56451A127BA591000CC35F7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B5F3DA9027B6869F0058D7B4 /* ZonarEvirExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZonarEvirExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5F3DA9327B6869F0058D7B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5F3DA9527B6869F0058D7B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +49,7 @@
 		B5F3DAA427B6869F0058D7B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5F3DAB627B6AD540058D7B4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B5F3DAB927B6B0A70058D7B4 /* AssetCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetCardCell.swift; sourceTree = "<group>"; };
+		B5F3DABB27BA05F30058D7B4 /* LastInspectionHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastInspectionHomeView.swift; sourceTree = "<group>"; };
 		C865DCEF2954CC48CDE3A70C /* Pods-ZonarEvirExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZonarEvirExample.debug.xcconfig"; path = "Target Support Files/Pods-ZonarEvirExample/Pods-ZonarEvirExample.debug.xcconfig"; sourceTree = "<group>"; };
 		DD4C028F4C48DA18ACB33B81 /* Pods_ZonarEvirExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZonarEvirExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -63,6 +81,33 @@
 				DD4C028F4C48DA18ACB33B81 /* Pods_ZonarEvirExample.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B564519527BA0E5A00CC35F7 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				B564519627BA0EE300CC35F7 /* ThemeManager.swift */,
+				B564519827BA0F2900CC35F7 /* EvirTheme.swift */,
+				B564519A27BA0F5B00CC35F7 /* ContinentalTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		B564519D27BA0FFE00CC35F7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B564519E27BA102700CC35F7 /* UIColor+Extensions.swift */,
+				B507E32127BAB8EC00456354 /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B56451A027BA590300CC35F7 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				B56451A127BA591000CC35F7 /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		B5F3DA8727B6869F0058D7B4 = {
@@ -110,6 +155,9 @@
 		B5F3DAAB27B68C5E0058D7B4 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				B56451A027BA590300CC35F7 /* Constants */,
+				B564519D27BA0FFE00CC35F7 /* Extensions */,
+				B564519527BA0E5A00CC35F7 /* Theme */,
 				B5F3DA9F27B6869F0058D7B4 /* Assets.xcassets */,
 			);
 			path = App;
@@ -160,6 +208,9 @@
 			isa = PBXGroup;
 			children = (
 				B5F3DAB927B6B0A70058D7B4 /* AssetCardCell.swift */,
+				B5F3DABB27BA05F30058D7B4 /* LastInspectionHomeView.swift */,
+				B507E31D27BAB49D00456354 /* NavigationBarCustom.swift */,
+				B507E31F27BAB87300456354 /* HeaderBar.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -199,6 +250,7 @@
 				B5F3DA8C27B6869F0058D7B4 /* Sources */,
 				B5F3DA8D27B6869F0058D7B4 /* Frameworks */,
 				B5F3DA8E27B6869F0058D7B4 /* Resources */,
+				C5734C9EA462DDC78435FF37 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -278,6 +330,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C5734C9EA462DDC78435FF37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZonarEvirExample/Pods-ZonarEvirExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZonarEvirExample/Pods-ZonarEvirExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZonarEvirExample/Pods-ZonarEvirExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -285,12 +354,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5F3DABC27BA05F30058D7B4 /* LastInspectionHomeView.swift in Sources */,
+				B564519B27BA0F5B00CC35F7 /* ContinentalTheme.swift in Sources */,
 				B5F3DAB727B6AD540058D7B4 /* HomeViewController.swift in Sources */,
 				B5F3DA9827B6869F0058D7B4 /* ViewController.swift in Sources */,
+				B507E31E27BAB49D00456354 /* NavigationBarCustom.swift in Sources */,
+				B564519727BA0EE300CC35F7 /* ThemeManager.swift in Sources */,
+				B564519927BA0F2900CC35F7 /* EvirTheme.swift in Sources */,
 				B5F3DABA27B6B0A70058D7B4 /* AssetCardCell.swift in Sources */,
 				B5F3DA9E27B6869F0058D7B4 /* ZonarEvirExample.xcdatamodeld in Sources */,
 				B5F3DA9427B6869F0058D7B4 /* AppDelegate.swift in Sources */,
+				B507E32027BAB87300456354 /* HeaderBar.swift in Sources */,
 				B5F3DA9627B6869F0058D7B4 /* SceneDelegate.swift in Sources */,
+				B507E32227BAB8EC00456354 /* UIView+Extensions.swift in Sources */,
+				B564519F27BA102700CC35F7 /* UIColor+Extensions.swift in Sources */,
+				B56451A227BA591000CC35F7 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

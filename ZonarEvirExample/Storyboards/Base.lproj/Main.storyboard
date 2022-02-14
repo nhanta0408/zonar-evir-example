@@ -21,11 +21,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AssetCardCell" rowHeight="252" id="4NV-Ga-96L" customClass="AssetCardCell" customModule="ZonarEvirExample" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="252"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AssetCardCell" rowHeight="354" id="4NV-Ga-96L" customClass="AssetCardCell" customModule="ZonarEvirExample">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="354"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4NV-Ga-96L" id="5n0-ZY-vMl">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="252"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="354"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POWER UNIT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGQ-V4-Mk7" userLabel="Asset Type Lbl">
@@ -115,13 +115,13 @@
                                                     </subviews>
                                                 </stackView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CDe-tV-cly" userLabel="Ready Background">
-                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="242"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="344"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="READY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m65-l6-4yi" userLabel="Ready label">
-                                                            <rect key="frame" x="-52" y="60" width="150" height="162"/>
+                                                            <rect key="frame" x="-52" y="60" width="150" height="264"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="4df-cU-L8F"/>
-                                                                <constraint firstAttribute="height" constant="174" id="Q8l-Bp-aMd"/>
+                                                                <constraint firstAttribute="height" constant="200" id="Q8l-Bp-aMd"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -137,6 +137,13 @@
                                                         <constraint firstItem="m65-l6-4yi" firstAttribute="top" secondItem="CDe-tV-cly" secondAttribute="top" constant="60" id="b75-Px-a90"/>
                                                     </constraints>
                                                 </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YYB-ED-SiT" userLabel="Line View">
+                                                    <rect key="frame" x="50" y="190.5" width="364" height="2"/>
+                                                    <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="2" id="vQb-M2-mwe"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="uf5-R4-obG" firstAttribute="top" secondItem="yDS-i0-AaH" secondAttribute="bottom" constant="5" id="1pg-6T-L8M"/>
@@ -149,23 +156,29 @@
                                                 <constraint firstItem="sFS-9q-jav" firstAttribute="leading" secondItem="yDS-i0-AaH" secondAttribute="leading" id="OKS-0e-T9p"/>
                                                 <constraint firstItem="yDS-i0-AaH" firstAttribute="top" secondItem="cGQ-V4-Mk7" secondAttribute="bottom" id="Osf-9p-Yg9"/>
                                                 <constraint firstItem="cGQ-V4-Mk7" firstAttribute="top" secondItem="5n0-ZY-vMl" secondAttribute="topMargin" id="Vp9-IL-Lly"/>
+                                                <constraint firstItem="YYB-ED-SiT" firstAttribute="top" secondItem="3m1-0r-5b4" secondAttribute="top" constant="30" id="WnF-LA-tJY"/>
                                                 <constraint firstItem="cGQ-V4-Mk7" firstAttribute="leading" secondItem="CDe-tV-cly" secondAttribute="trailing" constant="15" id="YKt-hD-fAx"/>
                                                 <constraint firstItem="CQ6-UB-YY2" firstAttribute="leading" secondItem="jC5-iz-3py" secondAttribute="leading" id="bKE-l0-Fey"/>
+                                                <constraint firstAttribute="trailing" secondItem="YYB-ED-SiT" secondAttribute="trailing" id="cbv-1k-CTX"/>
                                                 <constraint firstAttribute="bottom" secondItem="CDe-tV-cly" secondAttribute="bottom" constant="10" id="dOx-xg-oKf"/>
                                                 <constraint firstItem="jC5-iz-3py" firstAttribute="leading" secondItem="sFS-9q-jav" secondAttribute="leading" id="gc0-Ie-Sl6"/>
+                                                <constraint firstItem="YYB-ED-SiT" firstAttribute="leading" secondItem="5n0-ZY-vMl" secondAttribute="leading" constant="50" id="h3j-cv-IUk"/>
                                                 <constraint firstItem="jC5-iz-3py" firstAttribute="top" secondItem="sFS-9q-jav" secondAttribute="bottom" constant="5" id="kNz-l5-ijd"/>
                                                 <constraint firstItem="uf5-R4-obG" firstAttribute="leading" secondItem="yDS-i0-AaH" secondAttribute="leading" id="lsh-yq-79m"/>
                                                 <constraint firstItem="3m1-0r-5b4" firstAttribute="top" secondItem="CQ6-UB-YY2" secondAttribute="bottom" constant="5" id="mcU-sW-zSw"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cGQ-V4-Mk7" secondAttribute="trailing" id="tq6-GF-QcA"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lineView" destination="YYB-ED-SiT" id="HgQ-bI-uoi"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLo-h6-Moh">
                                 <rect key="frame" x="30" y="738" width="354" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.1128238365" green="0.26909512279999998" blue="0.61327183249999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="START INSPECTION"/>
@@ -181,7 +194,7 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="ADD ASSET">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="0.1128238365" green="0.26909512279999998" blue="0.61327183249999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                         </subviews>

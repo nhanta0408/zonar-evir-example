@@ -6,5 +6,5 @@ target 'ZonarEvirExample' do
   use_frameworks!
 
   # Pods for ZonarEvirExample
-
+  pod "Macaw", "0.9.7"
 end
