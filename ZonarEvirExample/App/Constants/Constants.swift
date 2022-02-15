@@ -12,7 +12,7 @@ enum InspectionType: String {
     case postTrip = "Post-Trip DOT"
     case timeCard = "Time Card"
 }
-enum TypeOfDefect: String {
+enum DefectType: String {
     case majorDefect = "Major"
     case minor = "Minor"
     case noDefect = "No"

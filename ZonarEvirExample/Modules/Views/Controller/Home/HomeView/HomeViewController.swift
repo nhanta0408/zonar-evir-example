@@ -31,8 +31,9 @@ extension HomeViewController:UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = assetCardTableView.dequeueReusableCell(withIdentifier: "AssetCardCell", for: indexPath)
-        
+        let cell = assetCardTableView.dequeueReusableCell(withIdentifier: "AssetCardCell", for: indexPath) as! AssetCardCell
+        cell.lastInpsectionHomeView.addRightIconImageView()
+
         return cell
     }
 }

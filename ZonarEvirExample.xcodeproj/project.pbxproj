@@ -11,6 +11,7 @@
 		B507E31E27BAB49D00456354 /* NavigationBarCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = B507E31D27BAB49D00456354 /* NavigationBarCustom.swift */; };
 		B507E32027BAB87300456354 /* HeaderBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B507E31F27BAB87300456354 /* HeaderBar.swift */; };
 		B507E32227BAB8EC00456354 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B507E32127BAB8EC00456354 /* UIView+Extensions.swift */; };
+		B5346ECE27BBABE100189687 /* UserName.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5346ECD27BBABE100189687 /* UserName.swift */; };
 		B564519727BA0EE300CC35F7 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B564519627BA0EE300CC35F7 /* ThemeManager.swift */; };
 		B564519927BA0F2900CC35F7 /* EvirTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B564519827BA0F2900CC35F7 /* EvirTheme.swift */; };
 		B564519B27BA0F5B00CC35F7 /* ContinentalTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B564519A27BA0F5B00CC35F7 /* ContinentalTheme.swift */; };
@@ -33,6 +34,7 @@
 		B507E31D27BAB49D00456354 /* NavigationBarCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarCustom.swift; sourceTree = "<group>"; };
 		B507E31F27BAB87300456354 /* HeaderBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderBar.swift; sourceTree = "<group>"; };
 		B507E32127BAB8EC00456354 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		B5346ECD27BBABE100189687 /* UserName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserName.swift; sourceTree = "<group>"; };
 		B564519627BA0EE300CC35F7 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		B564519827BA0F2900CC35F7 /* EvirTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvirTheme.swift; sourceTree = "<group>"; };
 		B564519A27BA0F5B00CC35F7 /* ContinentalTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentalTheme.swift; sourceTree = "<group>"; };
@@ -81,6 +83,14 @@
 				DD4C028F4C48DA18ACB33B81 /* Pods_ZonarEvirExample.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5346ECC27BBABD200189687 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				B5346ECD27BBABE100189687 /* UserName.swift */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 		B564519527BA0E5A00CC35F7 /* Theme */ = {
@@ -200,6 +210,7 @@
 		B5F3DAB127B68CAA0058D7B4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B5346ECC27BBABD200189687 /* User */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -355,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5F3DABC27BA05F30058D7B4 /* LastInspectionHomeView.swift in Sources */,
+				B5346ECE27BBABE100189687 /* UserName.swift in Sources */,
 				B564519B27BA0F5B00CC35F7 /* ContinentalTheme.swift in Sources */,
 				B5F3DAB727B6AD540058D7B4 /* HomeViewController.swift in Sources */,
 				B5F3DA9827B6869F0058D7B4 /* ViewController.swift in Sources */,

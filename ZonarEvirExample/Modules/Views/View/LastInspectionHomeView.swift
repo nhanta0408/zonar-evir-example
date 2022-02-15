@@ -20,14 +20,15 @@ class LastInspectionHomeView: UIView {
     var labelDateAndInspector: UILabel = UILabel()
     var labelInspectionTypeAndResult: UILabel = UILabel()
     var rightIcon: UIImageView = UIImageView(frame: CGRect(x: 100, y: 0, width: 30, height: 30))
+    var trashIconButton = UIButton()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
         self.addLabelLastInspectionView(string: "LAST INSPECTION")
         self.addLabelDateAndInspector(dateString: "1", inspectorString: "Nhan Huu Ta")
-        self.addLabelInspectionTypeAndResult(inspectionTypeString: InspectionType.preTrip.rawValue, typeOfDefect: TypeOfDefect.majorDefect.rawValue)
-        self.addRightIconImageView()
+        self.addLabelInspectionTypeAndResult(inspectionTypeString:
+                                                InspectionType.preTrip.rawValue, typeOfDefect: DefectType.majorDefect.rawValue)
         NSLayoutConstraint.activate([
             labelLastInspection.leadingAnchor.constraint(equalTo: self.leadingAnchor),
             labelLastInspection.topAnchor.constraint(equalTo: self.topAnchor),
@@ -44,10 +45,7 @@ class LastInspectionHomeView: UIView {
             labelInspectionTypeAndResult.widthAnchor.constraint(equalToConstant: 300),
             labelInspectionTypeAndResult.heightAnchor.constraint(equalToConstant: 20),
  
-            rightIcon.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -100),
-            rightIcon.widthAnchor.constraint(equalToConstant: 20),
-            rightIcon.heightAnchor.constraint(equalToConstant: 40),
-            rightIcon.centerYAnchor.constraint(equalTo: centerYAnchor, constant: 0),
+         
         ])
     }
 
@@ -60,7 +58,7 @@ class LastInspectionHomeView: UIView {
         backgroundColor = .white
     }
 
-    func addLabelLastInspectionView(string : String) {
+    private func addLabelLastInspectionView(string : String) {
         labelLastInspection.textAlignment = NSTextAlignment.left
         labelLastInspection.text = string
         labelLastInspection.font = UIFont.boldSystemFont(ofSize: 18.0)
@@ -68,7 +66,7 @@ class LastInspectionHomeView: UIView {
         labelLastInspection.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(labelLastInspection)
     }
-    func addLabelDateAndInspector(dateString : String, inspectorString: String) {
+    private func addLabelDateAndInspector(dateString : String, inspectorString: String) {
         labelDateAndInspector.textAlignment = NSTextAlignment.left
         labelDateAndInspector.text = dateString + " day ago by " + inspectorString
         labelDateAndInspector.font = UIFont.systemFont(ofSize: 14)
@@ -77,7 +75,7 @@ class LastInspectionHomeView: UIView {
         self.addSubview(labelDateAndInspector)
 
     }
-    func addLabelInspectionTypeAndResult(inspectionTypeString: String, typeOfDefect: String) {
+    private func addLabelInspectionTypeAndResult(inspectionTypeString: String, typeOfDefect: String) {
         labelInspectionTypeAndResult.textAlignment = NSTextAlignment.left
         labelInspectionTypeAndResult.text = inspectionTypeString + " - " + typeOfDefect + " defect reported."
         labelInspectionTypeAndResult.font = UIFont.systemFont(ofSize: 14)
@@ -90,6 +88,12 @@ class LastInspectionHomeView: UIView {
         rightIcon.translatesAutoresizingMaskIntoConstraints = false
         rightIcon.contentMode = .scaleAspectFit
         self.addSubview(rightIcon)
+
+        rightIcon.leadingAnchor.constraint(equalTo: trashIconButton.leadingAnchor).isActive = true
+        rightIcon.widthAnchor.constraint(equalToConstant: 20).isActive = true
+        rightIcon.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        rightIcon.topAnchor.constraint(equalTo: topAnchor, constant: 15).isActive = true
+    
     }
 }
 
