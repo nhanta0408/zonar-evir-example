@@ -19,6 +19,8 @@ class HomeViewController:UIViewController {
     override func viewDidLoad() {
         assetCardTableView.dataSource = self
         setupUI()
+        //Thêm constraint của right icon here
+        // Dùng delegate hoặc closure
     }
     
 
@@ -30,6 +32,7 @@ extension HomeViewController:UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = assetCardTableView.dequeueReusableCell(withIdentifier: "AssetCardCell", for: indexPath)
+        
         return cell
     }
 }
