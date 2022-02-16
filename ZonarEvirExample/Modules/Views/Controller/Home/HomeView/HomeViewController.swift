@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class HomeViewController:UIViewController {
+class HomeViewController: UIViewController {
     let numberOfRowTest = 2
     @IBOutlet weak var assetCardTableView: UITableView!
     lazy var customNavigation: NavigationBarCustom = {

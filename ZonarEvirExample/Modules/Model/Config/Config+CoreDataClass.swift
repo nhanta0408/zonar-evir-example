@@ -2,7 +2,7 @@
 //  Config+CoreDataClass.swift
 //  
 //
-//  Created by gcshcm on 15/02/2022.
+//  Created by gcshcm on 16/02/2022.
 //
 //
 

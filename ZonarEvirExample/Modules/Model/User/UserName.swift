@@ -13,4 +13,9 @@ public class UserName: NSObject {
     public override init() {
         super.init()
     }
+    public convenience init (firstName: String, lastName: String) {
+        self.init()
+        self.firstName = firstName
+        self.lastName = lastName
+    }
 }
