@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class HomeViewController:UIViewController {
-    
+    let numberOfRowTest = 2
     @IBOutlet weak var assetCardTableView: UITableView!
     lazy var customNavigation: NavigationBarCustom = {
         let customNavigation = NavigationBarCustom()
@@ -27,14 +27,19 @@ class HomeViewController:UIViewController {
 }
 extension HomeViewController:UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return numberOfRowTest
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = assetCardTableView.dequeueReusableCell(withIdentifier: "AssetCardCell", for: indexPath) as! AssetCardCell
-        cell.lastInpsectionHomeView.addRightIconImageView()
-
-        return cell
+        if (indexPath.row == numberOfRowTest-1){
+            let cell = assetCardTableView.dequeueReusableCell(withIdentifier: "SelectMethodCell", for: indexPath) as! SelectMethodCell
+            return cell
+        }
+        else {
+            let cell = assetCardTableView.dequeueReusableCell(withIdentifier: "AssetCardCell", for: indexPath) as! AssetCardCell
+            cell.lastInpsectionHomeView.addRightIconImageView()
+            return cell
+        }
     }
 }
 

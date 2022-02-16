@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19206" systemVersion="21A559" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Asset" representedClassName="Asset" syncable="YES" codeGenerationType="class"/>
-    <entity name="Config" representedClassName="Config" syncable="YES" codeGenerationType="class">
+    <entity name="Asset" representedClassName="Asset" syncable="YES">
+        <attribute name="assetName" optional="YES" attributeType="String"/>
+        <attribute name="dot" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="plate" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="vin" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Config" representedClassName="Config" syncable="YES">
         <attribute name="assetType" optional="YES" attributeType="String"/>
         <attribute name="defectType" optional="YES" attributeType="String"/>
         <attribute name="inspectionType" optional="YES" attributeType="String"/>
-        <attribute name="inspectorName" optional="YES" attributeType="Transformable"/>
+        <attribute name="inspectorName" optional="YES" attributeType="Transformable" customClassName=".UserName"/>
         <attribute name="lastInspectionDayBefore" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
     <elements>
         <element name="Config" positionX="-63" positionY="-18" width="128" height="104"/>
-        <element name="Asset" positionX="-54" positionY="-9" width="128" height="29"/>
+        <element name="Asset" positionX="-54" positionY="-9" width="128" height="89"/>
     </elements>
 </model>

@@ -7,7 +7,10 @@
 
 import Foundation
 
-class UserName{
+public class UserName: NSObject {
     var firstName: String?
     var lastName: String?
+    public override init() {
+        super.init()
+    }
 }
