@@ -21,32 +21,9 @@ class LastInspectionHomeView: UIView {
     var labelInspectionTypeAndResult: UILabel = UILabel()
     var rightIcon: UIImageView = UIImageView(frame: CGRect(x: 100, y: 0, width: 30, height: 30))
     var trashIconButton = UIButton()
-    
+    var config: Config!
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
-        self.addLabelLastInspectionView(string: "LAST INSPECTION")
-        self.addLabelDateAndInspector(dateString: "1", inspectorString: "Nhan Huu Ta")
-        self.addLabelInspectionTypeAndResult(inspectionTypeString:
-                                                InspectionType.preTrip.rawValue, typeOfDefect: DefectType.majorDefect.rawValue)
-        NSLayoutConstraint.activate([
-            labelLastInspection.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            labelLastInspection.topAnchor.constraint(equalTo: self.topAnchor),
-            labelLastInspection.widthAnchor.constraint(equalToConstant: 200),
-            labelLastInspection.heightAnchor.constraint(equalToConstant: 20),
-            
-            labelDateAndInspector.topAnchor.constraint(equalTo: labelLastInspection.bottomAnchor, constant: 5),
-            labelDateAndInspector.leadingAnchor.constraint(equalTo: labelLastInspection.leadingAnchor),
-            labelDateAndInspector.widthAnchor.constraint(equalToConstant: 300),
-            labelDateAndInspector.heightAnchor.constraint(equalToConstant: 20),
-            
-            labelInspectionTypeAndResult.topAnchor.constraint(equalTo: labelDateAndInspector.bottomAnchor, constant: 5),
-            labelInspectionTypeAndResult.leadingAnchor.constraint(equalTo: labelLastInspection.leadingAnchor),
-            labelInspectionTypeAndResult.widthAnchor.constraint(equalToConstant: 300),
-            labelInspectionTypeAndResult.heightAnchor.constraint(equalToConstant: 20),
- 
-         
-        ])
     }
 
     required init(coder aDecoder: NSCoder) {
@@ -93,7 +70,33 @@ class LastInspectionHomeView: UIView {
         rightIcon.widthAnchor.constraint(equalToConstant: 20).isActive = true
         rightIcon.heightAnchor.constraint(equalToConstant: 40).isActive = true
         rightIcon.topAnchor.constraint(equalTo: topAnchor, constant: 15).isActive = true
-    
     }
+    func updateUI(){
+        self.addLabelLastInspectionView(string: "LAST INSPECTION")
+        self.addLabelDateAndInspector(dateString: String(config.lastInspectionDayBefore), inspectorString: config.inspectorName?.fullName ?? "")
+        self.addLabelInspectionTypeAndResult(inspectionTypeString:
+                                                config.inspectionType ?? "", typeOfDefect: config.defectType ?? "")
+        
+        self.addRightIconImageView()
+        NSLayoutConstraint.activate([
+            labelLastInspection.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            labelLastInspection.topAnchor.constraint(equalTo: self.topAnchor),
+            labelLastInspection.widthAnchor.constraint(equalToConstant: 200),
+            labelLastInspection.heightAnchor.constraint(equalToConstant: 20),
+            
+            labelDateAndInspector.topAnchor.constraint(equalTo: labelLastInspection.bottomAnchor, constant: 5),
+            labelDateAndInspector.leadingAnchor.constraint(equalTo: labelLastInspection.leadingAnchor),
+            labelDateAndInspector.widthAnchor.constraint(equalToConstant: 300),
+            labelDateAndInspector.heightAnchor.constraint(equalToConstant: 20),
+            
+            labelInspectionTypeAndResult.topAnchor.constraint(equalTo: labelDateAndInspector.bottomAnchor, constant: 5),
+            labelInspectionTypeAndResult.leadingAnchor.constraint(equalTo: labelLastInspection.leadingAnchor),
+            labelInspectionTypeAndResult.widthAnchor.constraint(equalToConstant: 300),
+            labelInspectionTypeAndResult.heightAnchor.constraint(equalToConstant: 20),
+ 
+         
+        ])
+    }
+    
 }
 

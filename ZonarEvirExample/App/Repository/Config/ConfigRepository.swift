@@ -11,6 +11,11 @@ protocol ConfigRepositoryProtocol {
     var configId: UUID? { get }
     
     func getConfigByIdFromDB(configId: UUID) -> Config?
+    
+    func getAllConfigsFromDB() -> [Config]?
+    //Use for staging
+    func createTestInstanceCoreData()
+    
 }
 
 final class ConfigRepository: ConfigRepositoryProtocol {
@@ -33,5 +38,19 @@ final class ConfigRepository: ConfigRepositoryProtocol {
             print(error.localizedDescription)
         }
         return configResult
+    }
+    
+    public func getAllConfigsFromDB() -> [Config]? {
+        var configsResult: [Config]?
+        do {
+            try configsResult = dataSource.getAllConfigs()
+        } catch {
+            print(error.localizedDescription)
+        }
+        return configsResult
+    }
+    //Use for staging
+    func createTestInstanceCoreData() {
+        dataSource.createTestInstanceCoreData()
     }
 }

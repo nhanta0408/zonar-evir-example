@@ -16,37 +16,30 @@ class HomeViewModel {
         self.configDomainModel = configDomainModel
         self.assetDomainModel = assetDomainModel
     }
-    
-    func getConfigById(id: UUID) -> Config {
-        var configResult = configDomainModel.getConfigById(id: id)
-        
-        guard let configResult = configResult else {
-            configResult = Config()
-            configResult?.id = UUID()
-            configResult?.lastInspectionDayBefore = 0
-            configResult?.inspectorName = UserName(firstName: "Test-FN", lastName: "Test-LN")
-            configResult?.inspectionType = InspectionType.preTrip.rawValue
-            configResult?.defectType = DefectType.majorDefect.rawValue
-            configResult?.assetType = "Tractor"
-            return configResult!
-        }
-        return configResult
-      
-
+    //MARK: CONFIG
+    func getConfigById(id: UUID) -> Config? {
+        return configDomainModel.getConfigById(id: id)
     }
     
-    func getAssetById(id: UUID) -> Asset {
-        var assetResult = assetDomainModel.getAssetById(id: id)
-        
-        guard let assetResult = assetResult else {
-            assetResult = Asset()
-            assetResult?.id = UUID()
-            assetResult?.vin = "DEFAULT-VIN"
-            assetResult?.plate = "DEFAULT-PLATE"
-            assetResult?.dot = 0
-            assetResult?.assetName = "TEST FLEET"
-            return assetResult!
-        }
-        return assetResult
+    func getAllConfigs() -> [Config] {
+        return configDomainModel.getAllConfigs() ?? []
     }
+    
+    
+    //MARK: ASSET
+    func getAssetById(id: UUID) -> Asset? {
+        return assetDomainModel.getAssetById(id: id)
+    }
+    
+    func getAllAssets() -> [Asset] {
+        return assetDomainModel.getAllAssets() ?? []
+    }
+    func getCountOfAllAssets() -> Int {
+        return getAllAssets().count
+    }
+    //Use for staging
+    func createTestInstanceCoreData() {
+        return configDomainModel.createTestInstanceCoreData()
+    }
+    
 }

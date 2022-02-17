@@ -8,8 +8,11 @@
 import Foundation
 
 public class UserName: NSObject {
-    var firstName: String?
-    var lastName: String?
+    var firstName: String = ""
+    var lastName: String = ""
+    lazy var fullName: String = {
+        return firstName + lastName
+    }()
     public override init() {
         super.init()
     }
@@ -18,4 +21,5 @@ public class UserName: NSObject {
         self.firstName = firstName
         self.lastName = lastName
     }
+    
 }

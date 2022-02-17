@@ -11,7 +11,9 @@ protocol ConfigDomainModelProtocol {
     var configRepository: ConfigRepositoryProtocol {get}
     
     func getConfigById(id: UUID)  -> Config?
-    
+    func getAllConfigs() -> [Config]?
+    //Use for staging
+    func createTestInstanceCoreData()
 }
 
 final class ConfigDomainModel:ConfigDomainModelProtocol {
@@ -24,6 +26,14 @@ final class ConfigDomainModel:ConfigDomainModelProtocol {
     
     func getConfigById(id: UUID) -> Config? {
         return configRepository.getConfigByIdFromDB(configId: id)
+    }
+    
+    func getAllConfigs() -> [Config]? {
+        return configRepository.getAllConfigsFromDB()
+    }
+    //Use for staging
+    func createTestInstanceCoreData() {
+        return configRepository.createTestInstanceCoreData()
     }
 }
 

@@ -48,6 +48,7 @@ fileprivate final class PrivateLocalStore: NSObject{
         }
         catch{
             print("Error save main Context")
+            print(error)
             return false
         }
     }
@@ -61,6 +62,7 @@ final class LocalStore: DataStoreProtocol {
     init(inMemory: Bool = false){
         privateStore = PrivateLocalStore(inMemory: inMemory)
     }
+    
 }
 
 extension LocalStore: DataProtocol{
@@ -77,6 +79,9 @@ extension LocalStore: DataProtocol{
         
         return try privateStore.viewContext.fetch(fetchRequest) as! [Element]
     }
+    func getAll<Element: NSManagedObject>() throws -> [Element] {
+        return (try privateStore.viewContext.fetch(Element.fetch()) as? [Element]) ?? []
+    }
 }
 extension LocalStore: ConfigDataProtocol {
     func getConfigById(configId: UUID) throws -> Config? {
@@ -89,8 +94,41 @@ extension LocalStore: ConfigDataProtocol {
             return nil
         }
     }
+    func getAllConfigs() throws -> [Config] {
+        return try getAll()
+    }
+    
+    func createTestInstanceCoreData() {
+        do {
+            // TODO: Check lại coi instance có save vô coreData thành công chưa
+            let isExistedInstance = try getAllConfigs().count != 0
+            if !isExistedInstance {
+                let config = Config(context: context)
+                config.id = UUID()
+                config.lastInspectionDayBefore = 0
+                config.inspectorName = UserName(firstName: "Test-FN", lastName: "Test-LN")
+                config.inspectionType = InspectionType.preTrip.rawValue
+                config.defectType = DefectType.majorDefect.rawValue
+                config.assetType = "Tractor"
+                
+                let asset = Asset(context: context)
+                asset.id = UUID()
+                asset.vin = "DEFAULT-VIN"
+                asset.plate = "DEFAULT-PLATE"
+                asset.dot = 0
+                asset.assetName = "TEST FLEET"
+                
+                try saveToDb()
+                
+            }
+        } catch  {
+            print(error.localizedDescription)
+        }
+    }
+    
 }
 extension LocalStore: AssetDataProtocol {
+    
     func getAssetById(assetId: UUID) throws -> Asset? {
         let predicate = NSPredicate(format: "id == %@", assetId.uuidString)
         let assets = try get(predicate: predicate) as! [Asset]
@@ -100,6 +138,9 @@ extension LocalStore: AssetDataProtocol {
         }else{
             return nil
         }
+    }
+    func getAllAssets() throws -> [Asset] {
+        return try getAll()
     }
 }
 

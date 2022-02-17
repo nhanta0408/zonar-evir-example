@@ -11,6 +11,7 @@ protocol AssetRepositoryProtocol {
     var assetId: UUID? { get }
     
     func getAssetByIdFromDB(assetId: UUID) -> Asset?
+    func getAllAssetsFromDB() -> [Asset]?
 }
 
 final class AssetRepository: AssetRepositoryProtocol {
@@ -33,5 +34,15 @@ final class AssetRepository: AssetRepositoryProtocol {
             print(error.localizedDescription)
         }
         return assetResult
+    }
+    
+    public func getAllAssetsFromDB() -> [Asset]? {
+        var assetsResult: [Asset]?
+        do {
+            try assetsResult = dataSource.getAllAssets()
+        } catch {
+            print(error.localizedDescription)
+        }
+        return assetsResult
     }
 }

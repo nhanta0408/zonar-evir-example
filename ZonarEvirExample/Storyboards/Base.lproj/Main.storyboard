@@ -138,7 +138,7 @@
                                                             <color key="textColor" systemColor="systemGrayColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No defect reported" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfi-ZE-VJo" userLabel="Place Value Label">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No defect reported" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfi-ZE-VJo" userLabel="Plate Value Label">
                                                             <rect key="frame" x="35.5" y="0.0" width="124" height="17"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <color key="textColor" systemColor="systemGrayColor"/>
@@ -167,7 +167,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="50" height="344"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="READY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m65-l6-4yi" userLabel="Ready label">
-                                                            <rect key="frame" x="-52" y="60" width="150" height="264"/>
+                                                            <rect key="frame" x="-52" y="0.0" width="150" height="200"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="4df-cU-L8F"/>
                                                                 <constraint firstAttribute="height" constant="200" id="Q8l-Bp-aMd"/>
@@ -180,10 +180,10 @@
                                                     <color key="backgroundColor" red="0.49411764705882355" green="0.6470588235294118" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="44W-cl-c43"/>
-                                                        <constraint firstAttribute="bottom" secondItem="m65-l6-4yi" secondAttribute="bottom" constant="20" id="8vQ-Dt-Lb2"/>
                                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="m65-l6-4yi" secondAttribute="trailing" constant="-48" id="G43-Sp-4Hn"/>
                                                         <constraint firstItem="m65-l6-4yi" firstAttribute="leading" secondItem="CDe-tV-cly" secondAttribute="leadingMargin" constant="-60" id="REd-4w-qDf"/>
-                                                        <constraint firstItem="m65-l6-4yi" firstAttribute="top" secondItem="CDe-tV-cly" secondAttribute="top" constant="60" id="b75-Px-a90"/>
+                                                        <constraint firstItem="m65-l6-4yi" firstAttribute="top" secondItem="CDe-tV-cly" secondAttribute="top" id="b75-Px-a90"/>
+                                                        <constraint firstAttribute="height" constant="270" id="l0p-Bu-QbC"/>
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YYB-ED-SiT" userLabel="Line View">
@@ -194,7 +194,7 @@
                                                     </constraints>
                                                 </view>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KuL-oh-eW2" userLabel="DeleteButton">
-                                                    <rect key="frame" x="346.5" y="64" width="30" height="30"/>
+                                                    <rect key="frame" x="344" y="64" width="30" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="AI7-DS-YaC"/>
                                                         <constraint firstAttribute="width" constant="30" id="SZE-ti-I3L"/>
@@ -207,7 +207,6 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="uf5-R4-obG" firstAttribute="top" secondItem="yDS-i0-AaH" secondAttribute="bottom" constant="5" id="1pg-6T-L8M"/>
-                                                <constraint firstItem="KuL-oh-eW2" firstAttribute="leading" secondItem="yDS-i0-AaH" secondAttribute="trailing" constant="50" id="2it-fz-feT"/>
                                                 <constraint firstItem="yDS-i0-AaH" firstAttribute="leading" secondItem="CDe-tV-cly" secondAttribute="trailing" constant="15" id="3I8-0g-A2q"/>
                                                 <constraint firstItem="CQ6-UB-YY2" firstAttribute="top" secondItem="jC5-iz-3py" secondAttribute="bottom" constant="5" id="50N-Cf-nEq"/>
                                                 <constraint firstItem="3m1-0r-5b4" firstAttribute="leading" secondItem="CQ6-UB-YY2" secondAttribute="leading" id="87m-1K-Y6M"/>
@@ -224,6 +223,7 @@
                                                 <constraint firstAttribute="bottom" secondItem="CDe-tV-cly" secondAttribute="bottom" constant="10" id="dOx-xg-oKf"/>
                                                 <constraint firstItem="jC5-iz-3py" firstAttribute="leading" secondItem="sFS-9q-jav" secondAttribute="leading" id="gc0-Ie-Sl6"/>
                                                 <constraint firstItem="YYB-ED-SiT" firstAttribute="leading" secondItem="5n0-ZY-vMl" secondAttribute="leading" constant="50" id="h3j-cv-IUk"/>
+                                                <constraint firstAttribute="trailing" secondItem="KuL-oh-eW2" secondAttribute="trailing" constant="40" id="iop-sy-b3M"/>
                                                 <constraint firstItem="jC5-iz-3py" firstAttribute="top" secondItem="sFS-9q-jav" secondAttribute="bottom" constant="5" id="kNz-l5-ijd"/>
                                                 <constraint firstItem="uf5-R4-obG" firstAttribute="leading" secondItem="yDS-i0-AaH" secondAttribute="leading" id="lsh-yq-79m"/>
                                                 <constraint firstItem="3m1-0r-5b4" firstAttribute="top" secondItem="CQ6-UB-YY2" secondAttribute="bottom" constant="5" id="mcU-sW-zSw"/>
@@ -232,9 +232,17 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="assetNumberLabel" destination="yDS-i0-AaH" id="okd-Bf-gbw"/>
+                                            <outlet property="assetTypeLabel" destination="cGQ-V4-Mk7" id="CC8-dp-OO3"/>
+                                            <outlet property="dotValueLabel" destination="mMc-Lq-QEV" id="6Hi-8g-8vP"/>
                                             <outlet property="lineView" destination="YYB-ED-SiT" id="HgQ-bI-uoi"/>
+                                            <outlet property="manufactureLabel" destination="uf5-R4-obG" id="RGc-VG-QVo"/>
+                                            <outlet property="plateValueLabel" destination="jfi-ZE-VJo" id="NV6-aS-kJl"/>
+                                            <outlet property="readyBackground" destination="CDe-tV-cly" id="q2B-MO-0cV"/>
                                             <outlet property="readyLbl" destination="m65-l6-4yi" id="WCi-6R-JW2"/>
+                                            <outlet property="rentalDotValueLabel" destination="J7f-Zc-Sps" id="bv0-Sd-4oD"/>
                                             <outlet property="trashIconButton" destination="KuL-oh-eW2" id="5Id-ej-evh"/>
+                                            <outlet property="vinValueLabel" destination="GZC-AO-Z33" id="vdR-kg-hLY"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SelectMethodCell" rowHeight="168" id="WTq-KL-Ugz" userLabel="SelectMethodCell" customClass="SelectMethodCell" customModule="ZonarEvirExample">
@@ -254,24 +262,26 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Gla-0a-3P5" userLabel="Stack View Search">
-                                                    <rect key="frame" x="60" y="30.5" width="150" height="50.5"/>
+                                                    <rect key="frame" x="60" y="30.5" width="130" height="50.5"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search_asset" translatesAutoresizingMaskIntoConstraints="NO" id="f50-A3-3to" userLabel="Search Image View">
-                                                            <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="130" height="30"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="30" id="7xR-4l-GkN"/>
                                                                 <constraint firstAttribute="width" constant="35" id="tin-Ti-2gg"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEARCH or ADD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="82g-Rz-MJ2" userLabel="SearchLabel">
-                                                            <rect key="frame" x="0.0" y="30" width="150" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="30" width="130" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="0.1128238365" green="0.26909512279999998" blue="0.61327183249999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="150" id="81c-dE-c6Z"/>
+                                                        <constraint firstAttribute="width" constant="130" id="81c-dE-c6Z"/>
+                                                        <constraint firstItem="82g-Rz-MJ2" firstAttribute="centerX" secondItem="Gla-0a-3P5" secondAttribute="centerX" id="jv8-Ep-2AX"/>
+                                                        <constraint firstItem="f50-A3-3to" firstAttribute="centerX" secondItem="Gla-0a-3P5" secondAttribute="centerX" id="x8H-1n-lcI"/>
                                                     </constraints>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6sk-ol-KQS" userLabel="Stack View Tag">
