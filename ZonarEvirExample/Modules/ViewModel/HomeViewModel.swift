@@ -50,7 +50,7 @@ class HomeViewModel {
             configDomainModel.insertConfig(configParameter: {
                 $0.id = UUID()
                 $0.lastInspectionDayBefore = 0
-                $0.inspectorName = UserName(firstName: "Test-FN", lastName: "Test-LN")
+                $0.inspectorName = "Nhan Huu Ta"
                 $0.inspectionType = InspectionType.preTrip.rawValue
                 $0.defectType = DefectType.majorDefect.rawValue
             })

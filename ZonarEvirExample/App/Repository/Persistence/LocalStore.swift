@@ -114,7 +114,8 @@ extension LocalStore: ConfigDataProtocol {
                 let config = Config(context: privateStore.viewContext)
                 config.id = UUID()
                 config.lastInspectionDayBefore = 0
-                config.inspectorName = UserName(firstName: "Test-FN", lastName: "Test-LN")
+                //config.inspectorName = UserName(firstName: "Test-FN", lastName: "Test-LN")
+                config.inspectorName = "Nhan Huu Ta"
                 config.inspectionType = InspectionType.preTrip.rawValue
                 config.defectType = DefectType.majorDefect.rawValue
                 config.assetType = "Tractor"

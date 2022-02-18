@@ -2,7 +2,7 @@
 //  Asset+CoreDataProperties.swift
 //  
 //
-//  Created by gcshcm on 16/02/2022.
+//  Created by gcshcm on 18/02/2022.
 //
 //
 
@@ -16,10 +16,10 @@ extension Asset {
         return NSFetchRequest<Asset>(entityName: "Asset")
     }
 
-    @NSManaged public var assetName: String?
-    @NSManaged public var dot: Int64
     @NSManaged public var id: UUID?
-    @NSManaged public var plate: String?
     @NSManaged public var vin: String?
+    @NSManaged public var plate: String?
+    @NSManaged public var dot: Int64
+    @NSManaged public var assetName: String?
 
 }

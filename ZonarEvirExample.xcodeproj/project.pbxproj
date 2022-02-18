@@ -11,8 +11,6 @@
 		B507E31E27BAB49D00456354 /* NavigationBarCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = B507E31D27BAB49D00456354 /* NavigationBarCustom.swift */; };
 		B507E32027BAB87300456354 /* HeaderBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B507E31F27BAB87300456354 /* HeaderBar.swift */; };
 		B507E32227BAB8EC00456354 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B507E32127BAB8EC00456354 /* UIView+Extensions.swift */; };
-		B531E28127BD0A3A00907B2A /* Asset+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B531E27F27BD0A3A00907B2A /* Asset+CoreDataClass.swift */; };
-		B531E28227BD0A3A00907B2A /* Asset+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B531E28027BD0A3A00907B2A /* Asset+CoreDataProperties.swift */; };
 		B5346ECE27BBABE100189687 /* UserName.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5346ECD27BBABE100189687 /* UserName.swift */; };
 		B5346EDF27BC850C00189687 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5346EDE27BC850C00189687 /* LoginViewController.swift */; };
 		B564519727BA0EE300CC35F7 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B564519627BA0EE300CC35F7 /* ThemeManager.swift */; };
@@ -26,10 +24,13 @@
 		B5D583E727BCA7FB00896022 /* SelectMethodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D583E627BCA7FB00896022 /* SelectMethodCell.swift */; };
 		B5D583EB27BCAEF100896022 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D583EA27BCAEF100896022 /* DataStore.swift */; };
 		B5D583ED27BCC96500896022 /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D583EC27BCC96500896022 /* LocalStore.swift */; };
+		B5E3065D27BF9DE0002BA188 /* ZonarEvirExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5E3065B27BF9DE0002BA188 /* ZonarEvirExample.xcdatamodeld */; };
+		B5E3066827BF9FED002BA188 /* Asset+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3066627BF9FED002BA188 /* Asset+CoreDataProperties.swift */; };
+		B5E3066927BF9FED002BA188 /* Asset+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3066727BF9FED002BA188 /* Asset+CoreDataClass.swift */; };
+		B5E3066C27BF9FF0002BA188 /* Config+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3066A27BF9FF0002BA188 /* Config+CoreDataClass.swift */; };
+		B5E3066D27BF9FF0002BA188 /* Config+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3066B27BF9FF0002BA188 /* Config+CoreDataProperties.swift */; };
 		B5E3D56B27BCE123000185F1 /* NSManagedObject+DataManipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D56A27BCE123000185F1 /* NSManagedObject+DataManipulation.swift */; };
 		B5E3D56F27BCEC84000185F1 /* ConfigRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D56E27BCEC84000185F1 /* ConfigRepository.swift */; };
-		B5E3D57227BCF16A000185F1 /* Config+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D57027BCF16A000185F1 /* Config+CoreDataClass.swift */; };
-		B5E3D57327BCF16A000185F1 /* Config+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D57127BCF16A000185F1 /* Config+CoreDataProperties.swift */; };
 		B5E3D57927BCF1D4000185F1 /* AssetRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D57827BCF1D4000185F1 /* AssetRepository.swift */; };
 		B5E3D57C27BCF738000185F1 /* ConfigDomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D57B27BCF738000185F1 /* ConfigDomainModel.swift */; };
 		B5E3D57F27BCFC41000185F1 /* AssetDomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D57E27BCFC41000185F1 /* AssetDomainModel.swift */; };
@@ -38,7 +39,6 @@
 		B5F3DA9627B6869F0058D7B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3DA9527B6869F0058D7B4 /* SceneDelegate.swift */; };
 		B5F3DA9827B6869F0058D7B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3DA9727B6869F0058D7B4 /* ViewController.swift */; };
 		B5F3DA9B27B6869F0058D7B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F3DA9927B6869F0058D7B4 /* Main.storyboard */; };
-		B5F3DA9E27B6869F0058D7B4 /* ZonarEvirExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5F3DA9C27B6869F0058D7B4 /* ZonarEvirExample.xcdatamodeld */; };
 		B5F3DAA027B6869F0058D7B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F3DA9F27B6869F0058D7B4 /* Assets.xcassets */; };
 		B5F3DAA327B6869F0058D7B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F3DAA127B6869F0058D7B4 /* LaunchScreen.storyboard */; };
 		B5F3DAB727B6AD540058D7B4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3DAB627B6AD540058D7B4 /* HomeViewController.swift */; };
@@ -51,8 +51,6 @@
 		B507E31D27BAB49D00456354 /* NavigationBarCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarCustom.swift; sourceTree = "<group>"; };
 		B507E31F27BAB87300456354 /* HeaderBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderBar.swift; sourceTree = "<group>"; };
 		B507E32127BAB8EC00456354 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
-		B531E27F27BD0A3A00907B2A /* Asset+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Asset+CoreDataClass.swift"; sourceTree = "<group>"; };
-		B531E28027BD0A3A00907B2A /* Asset+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Asset+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B5346ECD27BBABE100189687 /* UserName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserName.swift; sourceTree = "<group>"; };
 		B5346EDE27BC850C00189687 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B564519627BA0EE300CC35F7 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
@@ -66,10 +64,13 @@
 		B5D583E627BCA7FB00896022 /* SelectMethodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMethodCell.swift; sourceTree = "<group>"; };
 		B5D583EA27BCAEF100896022 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		B5D583EC27BCC96500896022 /* LocalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStore.swift; sourceTree = "<group>"; };
+		B5E3065C27BF9DE0002BA188 /* ZonarEvirExample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ZonarEvirExample.xcdatamodel; sourceTree = "<group>"; };
+		B5E3066627BF9FED002BA188 /* Asset+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Asset+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B5E3066727BF9FED002BA188 /* Asset+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Asset+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B5E3066A27BF9FF0002BA188 /* Config+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Config+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B5E3066B27BF9FF0002BA188 /* Config+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Config+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B5E3D56A27BCE123000185F1 /* NSManagedObject+DataManipulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+DataManipulation.swift"; sourceTree = "<group>"; };
 		B5E3D56E27BCEC84000185F1 /* ConfigRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigRepository.swift; sourceTree = "<group>"; };
-		B5E3D57027BCF16A000185F1 /* Config+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Config+CoreDataClass.swift"; sourceTree = "<group>"; };
-		B5E3D57127BCF16A000185F1 /* Config+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Config+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B5E3D57827BCF1D4000185F1 /* AssetRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetRepository.swift; sourceTree = "<group>"; };
 		B5E3D57B27BCF738000185F1 /* ConfigDomainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigDomainModel.swift; sourceTree = "<group>"; };
 		B5E3D57E27BCFC41000185F1 /* AssetDomainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetDomainModel.swift; sourceTree = "<group>"; };
@@ -79,7 +80,6 @@
 		B5F3DA9527B6869F0058D7B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B5F3DA9727B6869F0058D7B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B5F3DA9A27B6869F0058D7B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B5F3DA9D27B6869F0058D7B4 /* ZonarEvirExample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ZonarEvirExample.xcdatamodel; sourceTree = "<group>"; };
 		B5F3DA9F27B6869F0058D7B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5F3DAA227B6869F0058D7B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5F3DAA427B6869F0058D7B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -130,8 +130,8 @@
 		B5346ECF27BBAF0800189687 /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				B5E3D57027BCF16A000185F1 /* Config+CoreDataClass.swift */,
-				B5E3D57127BCF16A000185F1 /* Config+CoreDataProperties.swift */,
+				B5E3066A27BF9FF0002BA188 /* Config+CoreDataClass.swift */,
+				B5E3066B27BF9FF0002BA188 /* Config+CoreDataProperties.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -139,8 +139,8 @@
 		B5346ED027BBAF0E00189687 /* Asset */ = {
 			isa = PBXGroup;
 			children = (
-				B531E27F27BD0A3A00907B2A /* Asset+CoreDataClass.swift */,
-				B531E28027BD0A3A00907B2A /* Asset+CoreDataProperties.swift */,
+				B5E3066727BF9FED002BA188 /* Asset+CoreDataClass.swift */,
+				B5E3066627BF9FED002BA188 /* Asset+CoreDataProperties.swift */,
 			);
 			path = Asset;
 			sourceTree = "<group>";
@@ -194,8 +194,8 @@
 			children = (
 				B5E3D56D27BCEC75000185F1 /* Asset */,
 				B5E3D56C27BCEC6A000185F1 /* Config */,
-				B5F3DA9C27B6869F0058D7B4 /* ZonarEvirExample.xcdatamodeld */,
 				B5D583E927BCAD5400896022 /* Persistence */,
+				B5E3065B27BF9DE0002BA188 /* ZonarEvirExample.xcdatamodeld */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -498,28 +498,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5346EDF27BC850C00189687 /* LoginViewController.swift in Sources */,
-				B5E3D57227BCF16A000185F1 /* Config+CoreDataClass.swift in Sources */,
+				B5E3065D27BF9DE0002BA188 /* ZonarEvirExample.xcdatamodeld in Sources */,
 				B5F3DABC27BA05F30058D7B4 /* LastInspectionHomeView.swift in Sources */,
-				B5E3D57327BCF16A000185F1 /* Config+CoreDataProperties.swift in Sources */,
 				B5E3D57F27BCFC41000185F1 /* AssetDomainModel.swift in Sources */,
 				B5D583E727BCA7FB00896022 /* SelectMethodCell.swift in Sources */,
 				B5346ECE27BBABE100189687 /* UserName.swift in Sources */,
 				B564519B27BA0F5B00CC35F7 /* ContinentalTheme.swift in Sources */,
 				B5F3DAB727B6AD540058D7B4 /* HomeViewController.swift in Sources */,
+				B5E3066927BF9FED002BA188 /* Asset+CoreDataClass.swift in Sources */,
 				B5B7B9BF27BE4CB1004DCF06 /* NoAssetCell.swift in Sources */,
 				B5F3DA9827B6869F0058D7B4 /* ViewController.swift in Sources */,
+				B5E3066D27BF9FF0002BA188 /* Config+CoreDataProperties.swift in Sources */,
 				B507E31E27BAB49D00456354 /* NavigationBarCustom.swift in Sources */,
 				B564519727BA0EE300CC35F7 /* ThemeManager.swift in Sources */,
-				B531E28227BD0A3A00907B2A /* Asset+CoreDataProperties.swift in Sources */,
-				B531E28127BD0A3A00907B2A /* Asset+CoreDataClass.swift in Sources */,
 				B5E3D58127BD008B000185F1 /* HomeViewModel.swift in Sources */,
 				B5E3D56F27BCEC84000185F1 /* ConfigRepository.swift in Sources */,
 				B5E3D57C27BCF738000185F1 /* ConfigDomainModel.swift in Sources */,
 				B564519927BA0F2900CC35F7 /* EvirTheme.swift in Sources */,
+				B5E3066C27BF9FF0002BA188 /* Config+CoreDataClass.swift in Sources */,
 				B5F3DABA27B6B0A70058D7B4 /* AssetCardCell.swift in Sources */,
 				B5E3D57927BCF1D4000185F1 /* AssetRepository.swift in Sources */,
 				B5D583ED27BCC96500896022 /* LocalStore.swift in Sources */,
-				B5F3DA9E27B6869F0058D7B4 /* ZonarEvirExample.xcdatamodeld in Sources */,
+				B5E3066827BF9FED002BA188 /* Asset+CoreDataProperties.swift in Sources */,
 				B5F3DA9427B6869F0058D7B4 /* AppDelegate.swift in Sources */,
 				B507E32027BAB87300456354 /* HeaderBar.swift in Sources */,
 				B5F3DA9627B6869F0058D7B4 /* SceneDelegate.swift in Sources */,
@@ -752,12 +752,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		B5F3DA9C27B6869F0058D7B4 /* ZonarEvirExample.xcdatamodeld */ = {
+		B5E3065B27BF9DE0002BA188 /* ZonarEvirExample.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				B5F3DA9D27B6869F0058D7B4 /* ZonarEvirExample.xcdatamodel */,
+				B5E3065C27BF9DE0002BA188 /* ZonarEvirExample.xcdatamodel */,
 			);
-			currentVersion = B5F3DA9D27B6869F0058D7B4 /* ZonarEvirExample.xcdatamodel */;
+			currentVersion = B5E3065C27BF9DE0002BA188 /* ZonarEvirExample.xcdatamodel */;
 			path = ZonarEvirExample.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

@@ -12,11 +12,11 @@
         <attribute name="defectType" optional="YES" attributeType="String"/>
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="inspectionType" optional="YES" attributeType="String"/>
-        <attribute name="inspectorName" optional="YES" attributeType="Transformable" valueTransformerName="" customClassName=".UserName"/>
+        <attribute name="inspectorName" optional="YES" attributeType="String"/>
         <attribute name="lastInspectionDayBefore" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
     <elements>
-        <element name="Asset" positionX="-54" positionY="-9" width="128" height="104"/>
-        <element name="Config" positionX="-63" positionY="-18" width="128" height="119"/>
+        <element name="Asset" positionX="-36" positionY="9" width="128" height="104"/>
+        <element name="Config" positionX="0" positionY="45" width="128" height="119"/>
     </elements>
 </model>

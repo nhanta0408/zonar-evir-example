@@ -2,12 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Asset+CoreDataClass.swift">
-   </FileRef>
-   <FileRef
-      location = "group:Asset+CoreDataProperties.swift">
-   </FileRef>
-   <FileRef
       location = "group:ZonarEvirExample.xcodeproj">
    </FileRef>
    <FileRef
