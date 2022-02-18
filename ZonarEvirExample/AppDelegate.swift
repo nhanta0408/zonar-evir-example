@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     fileprivate lazy var dataSource: LocalStore = {
         // When UI testing, the local store will default to inMemory
-        return LocalStore(inMemory: true)
+        return LocalStore(inMemory: false)
     }()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {

@@ -82,6 +82,11 @@ extension LocalStore: DataProtocol{
     func getAll<Element: NSManagedObject>() throws -> [Element] {
         return (try privateStore.viewContext.fetch(Element.fetch()) as? [Element]) ?? []
     }
+    func insert<Element: NSManagedObject>(entityModel: (Element) -> Void) throws {
+       let data = Element(context: privateStore.viewContext)
+       entityModel(data)
+       privateStore.saveMainContext()
+    }
 }
 extension LocalStore: ConfigDataProtocol {
     func getConfigById(configId: UUID) throws -> Config? {
@@ -97,21 +102,25 @@ extension LocalStore: ConfigDataProtocol {
     func getAllConfigs() throws -> [Config] {
         return try getAll()
     }
+    func insertConfig(configParameter: ConfigParameters) throws {
+        try insert(entityModel: configParameter)
+    }
     
     func createTestInstanceCoreData() {
         do {
             // TODO: Check lại coi instance có save vô coreData thành công chưa
             let isExistedInstance = try getAllConfigs().count != 0
             if !isExistedInstance {
-                let config = Config(context: context)
+                let config = Config(context: privateStore.viewContext)
                 config.id = UUID()
                 config.lastInspectionDayBefore = 0
                 config.inspectorName = UserName(firstName: "Test-FN", lastName: "Test-LN")
                 config.inspectionType = InspectionType.preTrip.rawValue
                 config.defectType = DefectType.majorDefect.rawValue
                 config.assetType = "Tractor"
-                
-                let asset = Asset(context: context)
+                try saveToDb()
+
+                let asset = Asset(context: privateStore.viewContext)
                 asset.id = UUID()
                 asset.vin = "DEFAULT-VIN"
                 asset.plate = "DEFAULT-PLATE"
@@ -119,7 +128,6 @@ extension LocalStore: ConfigDataProtocol {
                 asset.assetName = "TEST FLEET"
                 
                 try saveToDb()
-                
             }
         } catch  {
             print(error.localizedDescription)
@@ -142,5 +150,9 @@ extension LocalStore: AssetDataProtocol {
     func getAllAssets() throws -> [Asset] {
         return try getAll()
     }
+    func insertAsset(assetParameter: AssetParameters) throws{
+        try insert(entityModel: assetParameter)
+    }
+
 }
 

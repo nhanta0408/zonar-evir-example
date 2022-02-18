@@ -39,7 +39,35 @@ class HomeViewModel {
     }
     //Use for staging
     func createTestInstanceCoreData() {
-        return configDomainModel.createTestInstanceCoreData()
+        //return configDomainModel.createTestInstanceCoreData()
+        let isExistedInstance = getAllConfigs().count != 0
+        if !isExistedInstance {
+//            let config = Config()
+//            config.lastInspectionDayBefore = 0
+//            config.inspectorName = UserName(firstName: "Test-FN", lastName: "Test-LN")
+//            config.inspectionType = InspectionType.preTrip.rawValue
+//            config.defectType = DefectType.majorDefect.rawValue
+            configDomainModel.insertConfig(configParameter: {
+                $0.id = UUID()
+                $0.lastInspectionDayBefore = 0
+                $0.inspectorName = UserName(firstName: "Test-FN", lastName: "Test-LN")
+                $0.inspectionType = InspectionType.preTrip.rawValue
+                $0.defectType = DefectType.majorDefect.rawValue
+            })
+
+//            let asset = Asset()
+//            asset.vin = "DEFAULT-VIN"
+//            asset.plate = "DEFAULT-PLATE"
+//            asset.dot = 0
+//            asset.assetName = "TEST FLEET"
+            assetDomainModel.insertAsset(assetParameter: {
+                $0.id = UUID()
+                $0.vin = "DEFAULT-VIN"
+                $0.plate = "DEFAULT-PLATE"
+                $0.dot = 0
+                $0.assetName = "TEST FLEET"
+            })
+        }
     }
     
 }

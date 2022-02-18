@@ -36,7 +36,14 @@ class HomeViewController: UIViewController {
 }
 extension HomeViewController:UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        numberOfAssetRow = homeVM.getCountOfAllAssets()+1
+        var numberOfAsset = homeVM.getCountOfAllAssets()
+        if(numberOfAsset==0)
+        {
+            numberOfAssetRow = 2 //2 to show the NoAssetCell, Select method cell
+        }
+        else {
+            numberOfAssetRow = numberOfAsset + 1 //plus 1 to show the Select method cell
+        }
         print("number of asset: \(numberOfAssetRow)")
         return numberOfAssetRow
     }
@@ -47,15 +54,22 @@ extension HomeViewController:UITableViewDataSource{
             return cell
         }
         else {
-            let cell = assetCardTableView.dequeueReusableCell(withIdentifier: "AssetCardCell", for: indexPath) as! AssetCardCell
-            cell.asset = assets[indexPath.row]
-            cell.config = configs[indexPath.row]
-            cell.updateUI()
-            cell.closureTap = {
-                let vc = LastInspectionViewController()
-                self.navigationController?.pushViewController(vc, animated: true)
+            if(homeVM.getCountOfAllAssets() == 0){
+                assetCardTableView.register(UINib(nibName: "NoAssetCell", bundle: nil), forCellReuseIdentifier: "NoAssetCell")
+                let cell = tableView.dequeueReusableCell(withIdentifier: "NoAssetCell") as! NoAssetCell
+                return cell
             }
-            return cell
+            else{
+                let cell = assetCardTableView.dequeueReusableCell(withIdentifier: "AssetCardCell", for: indexPath) as! AssetCardCell
+                cell.asset = assets[indexPath.row]
+                cell.config = configs[indexPath.row]
+                cell.updateUI()
+                cell.closureTap = {
+                    let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "LastInspectionViewController")
+                    self.navigationController?.pushViewController(vc, animated: true)
+                }
+                return cell
+            }
         }
     }
 }
@@ -63,12 +77,9 @@ extension HomeViewController:UITableViewDataSource{
 //Setup code block
 extension HomeViewController {
     private func setupUI(){
-        // TODO: Bug
-        //Add NavBar make the ADD ASSET BUTTON disappear
         setupNavigationItems()
         if #available(iOS 15, *) {
-            // TODO: Bug
-            assetCardTableView.sectionHeaderTopPadding = 0 // does not be fixed
+            assetCardTableView.sectionHeaderTopPadding = 0
         }
     }
 }

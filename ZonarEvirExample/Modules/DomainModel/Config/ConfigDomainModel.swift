@@ -14,6 +14,7 @@ protocol ConfigDomainModelProtocol {
     func getAllConfigs() -> [Config]?
     //Use for staging
     func createTestInstanceCoreData()
+    func insertConfig(configParameter: ConfigParameters)
 }
 
 final class ConfigDomainModel:ConfigDomainModelProtocol {
@@ -34,6 +35,9 @@ final class ConfigDomainModel:ConfigDomainModelProtocol {
     //Use for staging
     func createTestInstanceCoreData() {
         return configRepository.createTestInstanceCoreData()
+    }
+    func insertConfig(configParameter: ConfigParameters){
+        configRepository.insertConfig(configParameter: configParameter)
     }
 }
 

@@ -12,6 +12,7 @@ protocol AssetRepositoryProtocol {
     
     func getAssetByIdFromDB(assetId: UUID) -> Asset?
     func getAllAssetsFromDB() -> [Asset]?
+    func insertAsset(assetParameter: AssetParameters)
 }
 
 final class AssetRepository: AssetRepositoryProtocol {
@@ -44,5 +45,12 @@ final class AssetRepository: AssetRepositoryProtocol {
             print(error.localizedDescription)
         }
         return assetsResult
+    }
+    func insertAsset(assetParameter: (Asset) -> Void) {
+        do {
+            try dataSource.insertAsset(assetParameter: assetParameter)
+        } catch  {
+            print("Error in insert asset: \(error.localizedDescription)")
+        }
     }
 }

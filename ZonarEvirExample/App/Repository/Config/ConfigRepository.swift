@@ -16,6 +16,7 @@ protocol ConfigRepositoryProtocol {
     //Use for staging
     func createTestInstanceCoreData()
     
+    func insertConfig(configParameter: ConfigParameters)
 }
 
 final class ConfigRepository: ConfigRepositoryProtocol {
@@ -52,5 +53,13 @@ final class ConfigRepository: ConfigRepositoryProtocol {
     //Use for staging
     func createTestInstanceCoreData() {
         dataSource.createTestInstanceCoreData()
+    }
+    func insertConfig(configParameter: ConfigParameters)
+    {
+        do {
+            try dataSource.insertConfig(configParameter: configParameter)
+        } catch  {
+            print("Error in insert config: \(error.localizedDescription)")
+        }
     }
 }

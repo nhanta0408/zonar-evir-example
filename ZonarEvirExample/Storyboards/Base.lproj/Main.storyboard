@@ -363,13 +363,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="H0O-qG-lMu" secondAttribute="bottom" constant="30" id="1Ng-fh-w1J"/>
-                            <constraint firstItem="iLo-h6-Moh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="5P5-l2-H0W"/>
+                            <constraint firstItem="Lai-kD-qQy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3ca-Ww-cVe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H0O-qG-lMu" secondAttribute="trailing" id="956-5C-mxh"/>
                             <constraint firstItem="Lai-kD-qQy" firstAttribute="top" secondItem="iLo-h6-Moh" secondAttribute="bottom" constant="20" id="9dI-r8-SaU"/>
                             <constraint firstItem="H0O-qG-lMu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FzP-GP-WJt"/>
                             <constraint firstItem="H0O-qG-lMu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="GsG-2A-d2l"/>
                             <constraint firstAttribute="bottom" secondItem="Lai-kD-qQy" secondAttribute="bottom" constant="40" id="Hd4-BL-FCv"/>
-                            <constraint firstItem="Lai-kD-qQy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="cg8-Se-oUe"/>
+                            <constraint firstItem="iLo-h6-Moh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="RhS-sg-DtL"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="KTs-OF-hgR"/>
@@ -398,6 +398,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zwt-Bp-L6P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1186.9565217391305" y="69.642857142857139"/>
+        </scene>
+        <!--Last Inspection Detail-->
+        <scene sceneID="20b-Df-Vh8">
+            <objects>
+                <viewController storyboardIdentifier="LastInspectionViewController" title="Last Inspection Detail" id="lXb-ad-RHh" customClass="LastInspectionViewController" customModule="ZonarEvirExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CWS-vb-3ib">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Here is Last Inspection Detail Screen" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYV-mm-1I9">
+                                <rect key="frame" x="-9" y="395" width="423" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="sQ3-F0-Qad"/>
+                                    <constraint firstAttribute="width" constant="423" id="xHc-bf-MWo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZS1-jn-Q1D"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VYV-mm-1I9" firstAttribute="centerX" secondItem="ZS1-jn-Q1D" secondAttribute="centerX" id="Bdn-cq-xwO"/>
+                            <constraint firstItem="VYV-mm-1I9" firstAttribute="centerY" secondItem="ZS1-jn-Q1D" secondAttribute="centerY" id="eSU-Q4-2wK"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XYF-Uc-ql2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2372" y="-603"/>
         </scene>
     </scenes>
     <resources>

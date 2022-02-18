@@ -11,7 +11,7 @@ protocol AssetDomainModelProtocol {
     
     func getAssetById(id: UUID) -> Asset?
     func getAllAssets() -> [Asset]?
-    
+    func insertAsset(assetParameter: AssetParameters)
 }
 
 final class AssetDomainModel:AssetDomainModelProtocol {
@@ -27,5 +27,8 @@ final class AssetDomainModel:AssetDomainModelProtocol {
     }
     func getAllAssets() -> [Asset]? {
         return assetRepository.getAllAssetsFromDB()
+    }
+    func insertAsset(assetParameter: AssetParameters){
+        assetRepository.insertAsset(assetParameter: assetParameter)
     }
 }

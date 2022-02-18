@@ -73,7 +73,7 @@ class LastInspectionHomeView: UIView {
     }
     func updateUI(){
         self.addLabelLastInspectionView(string: "LAST INSPECTION")
-        self.addLabelDateAndInspector(dateString: String(config.lastInspectionDayBefore), inspectorString: config.inspectorName?.fullName ?? "")
+        self.addLabelDateAndInspector(dateString: String(config.lastInspectionDayBefore), inspectorString: (config.inspectorName?.firstName ?? "") + (config.inspectorName?.lastName ?? ""))
         self.addLabelInspectionTypeAndResult(inspectionTypeString:
                                                 config.inspectionType ?? "", typeOfDefect: config.defectType ?? "")
         

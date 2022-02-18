@@ -21,6 +21,8 @@
 		B564519F27BA102700CC35F7 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B564519E27BA102700CC35F7 /* UIColor+Extensions.swift */; };
 		B56451A227BA591000CC35F7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56451A127BA591000CC35F7 /* Constants.swift */; };
 		B5B7B9BC27BE3D7B004DCF06 /* LastInspectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B7B9BB27BE3D7B004DCF06 /* LastInspectionViewController.swift */; };
+		B5B7B9BF27BE4CB1004DCF06 /* NoAssetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B7B9BD27BE4CB1004DCF06 /* NoAssetCell.swift */; };
+		B5B7B9C027BE4CB1004DCF06 /* NoAssetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5B7B9BE27BE4CB1004DCF06 /* NoAssetCell.xib */; };
 		B5D583E727BCA7FB00896022 /* SelectMethodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D583E627BCA7FB00896022 /* SelectMethodCell.swift */; };
 		B5D583EB27BCAEF100896022 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D583EA27BCAEF100896022 /* DataStore.swift */; };
 		B5D583ED27BCC96500896022 /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D583EC27BCC96500896022 /* LocalStore.swift */; };
@@ -59,6 +61,8 @@
 		B564519E27BA102700CC35F7 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		B56451A127BA591000CC35F7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B5B7B9BB27BE3D7B004DCF06 /* LastInspectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastInspectionViewController.swift; sourceTree = "<group>"; };
+		B5B7B9BD27BE4CB1004DCF06 /* NoAssetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoAssetCell.swift; sourceTree = "<group>"; };
+		B5B7B9BE27BE4CB1004DCF06 /* NoAssetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoAssetCell.xib; sourceTree = "<group>"; };
 		B5D583E627BCA7FB00896022 /* SelectMethodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMethodCell.swift; sourceTree = "<group>"; };
 		B5D583EA27BCAEF100896022 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		B5D583EC27BCC96500896022 /* LocalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStore.swift; sourceTree = "<group>"; };
@@ -293,8 +297,8 @@
 		B5F3DAAC27B68C6C0058D7B4 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				B5F3DAB127B68CAA0058D7B4 /* Model */,
 				B5F3DAB027B68CA30058D7B4 /* ViewModel */,
+				B5F3DAB127B68CAA0058D7B4 /* Model */,
 				B5F3DAAF27B68C990058D7B4 /* DomainModel */,
 				B5F3DAAE27B68C920058D7B4 /* Views */,
 			);
@@ -345,6 +349,8 @@
 				B507E31D27BAB49D00456354 /* NavigationBarCustom.swift */,
 				B507E31F27BAB87300456354 /* HeaderBar.swift */,
 				B5D583E627BCA7FB00896022 /* SelectMethodCell.swift */,
+				B5B7B9BD27BE4CB1004DCF06 /* NoAssetCell.swift */,
+				B5B7B9BE27BE4CB1004DCF06 /* NoAssetCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -436,6 +442,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5F3DAA327B6869F0058D7B4 /* LaunchScreen.storyboard in Resources */,
+				B5B7B9C027BE4CB1004DCF06 /* NoAssetCell.xib in Resources */,
 				B5F3DAA027B6869F0058D7B4 /* Assets.xcassets in Resources */,
 				B5F3DA9B27B6869F0058D7B4 /* Main.storyboard in Resources */,
 			);
@@ -499,6 +506,7 @@
 				B5346ECE27BBABE100189687 /* UserName.swift in Sources */,
 				B564519B27BA0F5B00CC35F7 /* ContinentalTheme.swift in Sources */,
 				B5F3DAB727B6AD540058D7B4 /* HomeViewController.swift in Sources */,
+				B5B7B9BF27BE4CB1004DCF06 /* NoAssetCell.swift in Sources */,
 				B5F3DA9827B6869F0058D7B4 /* ViewController.swift in Sources */,
 				B507E31E27BAB49D00456354 /* NavigationBarCustom.swift in Sources */,
 				B564519727BA0EE300CC35F7 /* ThemeManager.swift in Sources */,
