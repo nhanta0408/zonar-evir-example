@@ -27,8 +27,8 @@
 		B5E3065D27BF9DE0002BA188 /* ZonarEvirExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5E3065B27BF9DE0002BA188 /* ZonarEvirExample.xcdatamodeld */; };
 		B5E3066827BF9FED002BA188 /* Asset+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3066627BF9FED002BA188 /* Asset+CoreDataProperties.swift */; };
 		B5E3066927BF9FED002BA188 /* Asset+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3066727BF9FED002BA188 /* Asset+CoreDataClass.swift */; };
-		B5E3066C27BF9FF0002BA188 /* Config+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3066A27BF9FF0002BA188 /* Config+CoreDataClass.swift */; };
-		B5E3066D27BF9FF0002BA188 /* Config+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3066B27BF9FF0002BA188 /* Config+CoreDataProperties.swift */; };
+		B5E3067027BFA50B002BA188 /* Config+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3066E27BFA50B002BA188 /* Config+CoreDataClass.swift */; };
+		B5E3067127BFA50B002BA188 /* Config+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3066F27BFA50B002BA188 /* Config+CoreDataProperties.swift */; };
 		B5E3D56B27BCE123000185F1 /* NSManagedObject+DataManipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D56A27BCE123000185F1 /* NSManagedObject+DataManipulation.swift */; };
 		B5E3D56F27BCEC84000185F1 /* ConfigRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D56E27BCEC84000185F1 /* ConfigRepository.swift */; };
 		B5E3D57927BCF1D4000185F1 /* AssetRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D57827BCF1D4000185F1 /* AssetRepository.swift */; };
@@ -67,8 +67,8 @@
 		B5E3065C27BF9DE0002BA188 /* ZonarEvirExample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ZonarEvirExample.xcdatamodel; sourceTree = "<group>"; };
 		B5E3066627BF9FED002BA188 /* Asset+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Asset+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B5E3066727BF9FED002BA188 /* Asset+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Asset+CoreDataClass.swift"; sourceTree = "<group>"; };
-		B5E3066A27BF9FF0002BA188 /* Config+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Config+CoreDataClass.swift"; sourceTree = "<group>"; };
-		B5E3066B27BF9FF0002BA188 /* Config+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Config+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B5E3066E27BFA50B002BA188 /* Config+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Config+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B5E3066F27BFA50B002BA188 /* Config+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Config+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B5E3D56A27BCE123000185F1 /* NSManagedObject+DataManipulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+DataManipulation.swift"; sourceTree = "<group>"; };
 		B5E3D56E27BCEC84000185F1 /* ConfigRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigRepository.swift; sourceTree = "<group>"; };
 		B5E3D57827BCF1D4000185F1 /* AssetRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetRepository.swift; sourceTree = "<group>"; };
@@ -130,8 +130,8 @@
 		B5346ECF27BBAF0800189687 /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				B5E3066A27BF9FF0002BA188 /* Config+CoreDataClass.swift */,
-				B5E3066B27BF9FF0002BA188 /* Config+CoreDataProperties.swift */,
+				B5E3066E27BFA50B002BA188 /* Config+CoreDataClass.swift */,
+				B5E3066F27BFA50B002BA188 /* Config+CoreDataProperties.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -508,14 +508,14 @@
 				B5E3066927BF9FED002BA188 /* Asset+CoreDataClass.swift in Sources */,
 				B5B7B9BF27BE4CB1004DCF06 /* NoAssetCell.swift in Sources */,
 				B5F3DA9827B6869F0058D7B4 /* ViewController.swift in Sources */,
-				B5E3066D27BF9FF0002BA188 /* Config+CoreDataProperties.swift in Sources */,
+				B5E3067127BFA50B002BA188 /* Config+CoreDataProperties.swift in Sources */,
 				B507E31E27BAB49D00456354 /* NavigationBarCustom.swift in Sources */,
 				B564519727BA0EE300CC35F7 /* ThemeManager.swift in Sources */,
 				B5E3D58127BD008B000185F1 /* HomeViewModel.swift in Sources */,
 				B5E3D56F27BCEC84000185F1 /* ConfigRepository.swift in Sources */,
 				B5E3D57C27BCF738000185F1 /* ConfigDomainModel.swift in Sources */,
 				B564519927BA0F2900CC35F7 /* EvirTheme.swift in Sources */,
-				B5E3066C27BF9FF0002BA188 /* Config+CoreDataClass.swift in Sources */,
+				B5E3067027BFA50B002BA188 /* Config+CoreDataClass.swift in Sources */,
 				B5F3DABA27B6B0A70058D7B4 /* AssetCardCell.swift in Sources */,
 				B5E3D57927BCF1D4000185F1 /* AssetRepository.swift in Sources */,
 				B5D583ED27BCC96500896022 /* LocalStore.swift in Sources */,

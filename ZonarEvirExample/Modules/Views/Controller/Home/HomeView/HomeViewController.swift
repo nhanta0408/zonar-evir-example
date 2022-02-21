@@ -27,7 +27,7 @@ class HomeViewController: UIViewController {
         //Thêm constraint của right icon here
         // Dùng delegate hoặc closure
         //Use for staging
-        homeVM.createTestInstanceCoreData()
+        //homeVM.createTestInstanceCoreData()
         assets = homeVM.getAllAssets()
         configs = homeVM.getAllConfigs()
     }

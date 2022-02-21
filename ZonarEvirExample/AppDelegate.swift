@@ -65,7 +65,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         })
         return container
-    }()s
+    }()
+    
 
     // MARK: - Core Data Saving support
 
