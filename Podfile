@@ -6,6 +6,5 @@ target 'ZonarEvirExample' do
   use_frameworks!
 
   # Pods for ZonarEvirExample
-  pod "Macaw", "0.9.7"
   pod 'MaterialComponents/TextFields', "112.1.0"
 end
