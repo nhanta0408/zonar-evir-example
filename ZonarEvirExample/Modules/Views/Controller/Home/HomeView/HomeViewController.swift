@@ -27,16 +27,22 @@ class HomeViewController: UIViewController {
         //Thêm constraint của right icon here
         // Dùng delegate hoặc closure
         //Use for staging
-        //homeVM.createTestInstanceCoreData()
+        homeVM.createTestInstanceCoreData()
         assets = homeVM.getAllAssets()
         configs = homeVM.getAllConfigs()
+        //Footer
+        let footerView = UIView()
+        footerView.backgroundColor = .white
+        footerView.frame.size.height = 100
+        assetCardTableView.tableFooterView = footerView
+        
     }
-    
+
 
 }
 extension HomeViewController:UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        var numberOfAsset = homeVM.getCountOfAllAssets()
+        let numberOfAsset = homeVM.getCountOfAllAssets()
         if(numberOfAsset==0)
         {
             numberOfAssetRow = 2 //2 to show the NoAssetCell, Select method cell
@@ -88,7 +94,7 @@ extension HomeViewController {
 extension HomeViewController {
     private func setupNavigationItems() {
         customNavigation.setupNavColor()
-        customNavigation.setupLeftNavItems(text: "Hello Test Hard code")
+        customNavigation.setupLeftNavItems(text: homeVM.helloMessage)
         customNavigation.setupRightnavItems()
         customNavigation.setupHeaderBar(headerBarLbl: "Division hard code")
         customNavigation.setupCenterNavItems(title: "")

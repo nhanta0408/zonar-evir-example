@@ -16,6 +16,9 @@ class HomeViewModel {
         self.configDomainModel = configDomainModel
         self.assetDomainModel = assetDomainModel
     }
+    
+    //MARK: Variable for update UI
+    let helloMessage = "Hello Test Hard code"
     //MARK: CONFIG
     func getConfigById(id: UUID) -> Config? {
         return configDomainModel.getConfigById(id: id)
@@ -37,16 +40,13 @@ class HomeViewModel {
     func getCountOfAllAssets() -> Int {
         return getAllAssets().count
     }
+
     //Use for staging
     func createTestInstanceCoreData() {
         //return configDomainModel.createTestInstanceCoreData()
         let isExistedInstance = getAllConfigs().count != 0
         if !isExistedInstance {
-//            let config = Config()
-//            config.lastInspectionDayBefore = 0
-//            config.inspectorName = UserName(firstName: "Test-FN", lastName: "Test-LN")
-//            config.inspectionType = InspectionType.preTrip.rawValue
-//            config.defectType = DefectType.majorDefect.rawValue
+
             configDomainModel.insertConfig(configParameter: {
                 $0.id = UUID()
                 $0.lastInspectionDayBefore = 0
@@ -54,12 +54,15 @@ class HomeViewModel {
                 $0.inspectionType = InspectionType.preTrip.rawValue
                 $0.defectType = DefectType.majorDefect.rawValue
             })
+//            configDomainModel.insertConfig(configParameter: {
+//                $0.id = UUID()
+//                $0.lastInspectionDayBefore = 2
+//                $0.inspectorName = UserName(firstName: "Nhan", lastName: "Ta")
+//                $0.inspectionType = InspectionType.preTrip.rawValue
+//                $0.defectType = DefectType.noDefect.rawValue
+//            })
 
-//            let asset = Asset()
-//            asset.vin = "DEFAULT-VIN"
-//            asset.plate = "DEFAULT-PLATE"
-//            asset.dot = 0
-//            asset.assetName = "TEST FLEET"
+
             assetDomainModel.insertAsset(assetParameter: {
                 $0.id = UUID()
                 $0.vin = "DEFAULT-VIN"
@@ -67,6 +70,13 @@ class HomeViewModel {
                 $0.dot = 0
                 $0.assetName = "TEST FLEET"
             })
+//            assetDomainModel.insertAsset(assetParameter: {
+//                $0.id = UUID()
+//                $0.vin = "DEFAULT-VIN-2"
+//                $0.plate = "DEFAULT-PLATE-2"
+//                $0.dot = 0
+//                $0.assetName = "TEST FLEET 2"
+//            })
         }
     }
     
