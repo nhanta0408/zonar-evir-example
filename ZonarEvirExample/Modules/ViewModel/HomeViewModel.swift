@@ -11,6 +11,11 @@ class HomeViewModel {
     private let configDomainModel: ConfigDomainModelProtocol
     private let assetDomainModel: AssetDomainModelProtocol
     
+    struct HomeViewControllerData{
+        var assetDetails: [AssetDetail]
+        var configDetails: [ConfigDetail]
+    }
+    
     init(configDomainModel: ConfigDomainModelProtocol = ConfigDomainModel(),
          assetDomainModel: AssetDomainModelProtocol = AssetDomainModel()) {
         self.configDomainModel = configDomainModel
@@ -20,24 +25,17 @@ class HomeViewModel {
     //MARK: Variable for update UI
     let helloMessage = "Hello Test Hard code"
     //MARK: CONFIG
-    func getConfigById(id: UUID) -> Config? {
-        return configDomainModel.getConfigById(id: id)
-    }
-    
-    func getAllConfigs() -> [Config] {
-        return configDomainModel.getAllConfigs() ?? []
+    func getAllConfigs() -> [ConfigDetail] {
+        return configDomainModel.getAllConfigDetails()
     }
     
     
     //MARK: ASSET
-    func getAssetById(id: UUID) -> Asset? {
-        return assetDomainModel.getAssetById(id: id)
-    }
     
-    func getAllAssets() -> [Asset] {
-        return assetDomainModel.getAllAssets() ?? []
+    func getAllAssets() -> [AssetDetail] {
+        return assetDomainModel.getAllAssetDetails()
     }
-    func getCountOfAllAssets() -> Int {
+    func getCountOfAllAssetDetails() -> Int {
         return getAllAssets().count
     }
 

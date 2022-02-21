@@ -21,7 +21,7 @@ class LastInspectionHomeView: UIView {
     var labelInspectionTypeAndResult: UILabel = UILabel()
     var rightIcon: UIImageView = UIImageView(frame: CGRect(x: 100, y: 0, width: 30, height: 30))
     var trashIconButton = UIButton()
-    var config: Config!
+    var config: ConfigDetail!
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
@@ -73,10 +73,10 @@ class LastInspectionHomeView: UIView {
     }
     func updateUI(){
         self.addLabelLastInspectionView(string: "LAST INSPECTION")
-        self.addLabelDateAndInspector(dateString: String(config.lastInspectionDayBefore), inspectorString: (config.inspectorName?.firstName ?? "") + (config.inspectorName?.lastName ?? ""))
+        self.addLabelDateAndInspector(dateString: String(config.lastInspectionDayBefore), inspectorString: (config.inspectorName.firstName) + (config.inspectorName.lastName))
         //self.addLabelDateAndInspector(dateString: String(config.lastInspectionDayBefore), inspectorString: config.inspectorName ?? "")
         self.addLabelInspectionTypeAndResult(inspectionTypeString:
-                                                config.inspectionType ?? "", typeOfDefect: config.defectType ?? "")
+                                                config.inspectionType.rawValue, typeOfDefect: config.defectType.rawValue )
         
         self.addRightIconImageView()
         NSLayoutConstraint.activate([

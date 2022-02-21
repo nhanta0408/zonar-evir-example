@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Macaw
 
 class EvirTheme: ThemeProtocol {
 //    var headingFont: String = Fonts.robotoMedium

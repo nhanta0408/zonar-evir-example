@@ -8,8 +8,8 @@
 import UIKit
 
 class AssetCardCell: UITableViewCell {
-    var asset: Asset!
-    var config: Config!
+    var asset: AssetDetail!
+    var config: ConfigDetail!
     @IBOutlet weak var lineView: UIView!
     @IBOutlet weak var readyLbl: UILabel!
     @IBOutlet weak var readyBackground: UIView!
@@ -43,7 +43,7 @@ class AssetCardCell: UITableViewCell {
         lastInpsectionHomeView.addGestureRecognizer(tap)
     }
     private func updateReadyLbl(){
-        if config.defectType != DefectType.noDefect.rawValue {
+        if config.defectType.rawValue != DefectType.noDefect.rawValue {
             //Temporarily using Continental Red
             readyBackground.backgroundColor = .continentalLightRed
             readyLbl.text = "NOT READY"

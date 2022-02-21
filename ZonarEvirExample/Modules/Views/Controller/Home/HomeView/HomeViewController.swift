@@ -9,8 +9,8 @@ import Foundation
 import UIKit
 
 class HomeViewController: UIViewController {
-    var assets: [Asset]!
-    var configs: [Config]!
+    var assets: [AssetDetail]!
+    var configs: [ConfigDetail]!
     var numberOfAssetRow: Int = 0
     @IBOutlet weak var assetCardTableView: UITableView!
     lazy var customNavigation: NavigationBarCustom = {
@@ -42,7 +42,7 @@ class HomeViewController: UIViewController {
 }
 extension HomeViewController:UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let numberOfAsset = homeVM.getCountOfAllAssets()
+        let numberOfAsset = homeVM.getCountOfAllAssetDetails()
         if(numberOfAsset==0)
         {
             numberOfAssetRow = 2 //2 to show the NoAssetCell, Select method cell
@@ -60,7 +60,7 @@ extension HomeViewController:UITableViewDataSource{
             return cell
         }
         else {
-            if(homeVM.getCountOfAllAssets() == 0){
+            if(homeVM.getCountOfAllAssetDetails() == 0){
                 assetCardTableView.register(UINib(nibName: "NoAssetCell", bundle: nil), forCellReuseIdentifier: "NoAssetCell")
                 let cell = tableView.dequeueReusableCell(withIdentifier: "NoAssetCell") as! NoAssetCell
                 return cell
