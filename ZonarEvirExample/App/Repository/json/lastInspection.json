@@ -1,0 +1,30 @@
+{
+  "inspectionId": "2C8A124B-C011-4AE7-AC39-6ECCA7E3803E",
+  "assetId": "02A837C0-B2F6-45A1-BA19-85ADDF13AD1A",
+  "inspectedZones": [
+    {
+      "name": "Engine",
+      "severity": 0
+    },
+    {
+      "name": "Front",
+      "severity": 127
+    },
+    {
+      "name": "Left Rear",
+      "severity": 127
+    },
+    {
+      "name": "Right Rear",
+      "severity": 255
+    },
+    {
+      "name": "Inside Cab",
+      "severity": 127
+    },
+    {
+      "name": "Compliance",
+      "severity": 0
+    }
+  ]
+}

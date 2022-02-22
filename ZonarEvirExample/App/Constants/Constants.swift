@@ -18,3 +18,8 @@ enum DefectType: String {
     case noDefect = "No"
 }
 
+enum DefectTypeInt: Int {
+    case trivial = 63
+    case minor = 127
+    case major = 255
+}

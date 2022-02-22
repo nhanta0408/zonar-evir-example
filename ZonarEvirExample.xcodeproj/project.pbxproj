@@ -13,17 +13,24 @@
 		B507E32227BAB8EC00456354 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B507E32127BAB8EC00456354 /* UIView+Extensions.swift */; };
 		B5346ECE27BBABE100189687 /* UserName.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5346ECD27BBABE100189687 /* UserName.swift */; };
 		B5346EDF27BC850C00189687 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5346EDE27BC850C00189687 /* LoginViewController.swift */; };
+		B54AE75127C47A43000C06B8 /* InspectionZoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54AE75027C47A43000C06B8 /* InspectionZoneCell.swift */; };
+		B54AE75327C482C4000C06B8 /* PastInspectionAcknowledgeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54AE75227C482C4000C06B8 /* PastInspectionAcknowledgeCell.swift */; };
 		B564519727BA0EE300CC35F7 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B564519627BA0EE300CC35F7 /* ThemeManager.swift */; };
 		B564519927BA0F2900CC35F7 /* EvirTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B564519827BA0F2900CC35F7 /* EvirTheme.swift */; };
 		B564519B27BA0F5B00CC35F7 /* ContinentalTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B564519A27BA0F5B00CC35F7 /* ContinentalTheme.swift */; };
 		B564519F27BA102700CC35F7 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B564519E27BA102700CC35F7 /* UIColor+Extensions.swift */; };
 		B56451A227BA591000CC35F7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56451A127BA591000CC35F7 /* Constants.swift */; };
+		B57F5C0227C4C50400975C42 /* FakeDataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57F5C0127C4C50400975C42 /* FakeDataGenerator.swift */; };
+		B57F5C0527C4C70C00975C42 /* InspectedAssetDomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57F5C0427C4C70C00975C42 /* InspectedAssetDomainModel.swift */; };
+		B57F5C0827C4C84900975C42 /* lastInspection.json in Resources */ = {isa = PBXBuildFile; fileRef = B57F5C0727C4C84900975C42 /* lastInspection.json */; };
+		B57F5C0A27C4CD9100975C42 /* LastInspectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57F5C0927C4CD9100975C42 /* LastInspectionViewModel.swift */; };
 		B5B7B9BC27BE3D7B004DCF06 /* LastInspectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B7B9BB27BE3D7B004DCF06 /* LastInspectionViewController.swift */; };
 		B5B7B9BF27BE4CB1004DCF06 /* NoAssetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B7B9BD27BE4CB1004DCF06 /* NoAssetCell.swift */; };
 		B5B7B9C027BE4CB1004DCF06 /* NoAssetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5B7B9BE27BE4CB1004DCF06 /* NoAssetCell.xib */; };
 		B5D583E727BCA7FB00896022 /* SelectMethodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D583E627BCA7FB00896022 /* SelectMethodCell.swift */; };
 		B5D583EB27BCAEF100896022 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D583EA27BCAEF100896022 /* DataStore.swift */; };
 		B5D583ED27BCC96500896022 /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D583EC27BCC96500896022 /* LocalStore.swift */; };
+		B5DE9F8227C394480032D809 /* InspectionInformationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE9F8127C394480032D809 /* InspectionInformationCell.swift */; };
 		B5E3065D27BF9DE0002BA188 /* ZonarEvirExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5E3065B27BF9DE0002BA188 /* ZonarEvirExample.xcdatamodeld */; };
 		B5E3066827BF9FED002BA188 /* Asset+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3066627BF9FED002BA188 /* Asset+CoreDataProperties.swift */; };
 		B5E3066927BF9FED002BA188 /* Asset+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3066727BF9FED002BA188 /* Asset+CoreDataClass.swift */; };
@@ -53,17 +60,24 @@
 		B507E32127BAB8EC00456354 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		B5346ECD27BBABE100189687 /* UserName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserName.swift; sourceTree = "<group>"; };
 		B5346EDE27BC850C00189687 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B54AE75027C47A43000C06B8 /* InspectionZoneCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionZoneCell.swift; sourceTree = "<group>"; };
+		B54AE75227C482C4000C06B8 /* PastInspectionAcknowledgeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastInspectionAcknowledgeCell.swift; sourceTree = "<group>"; };
 		B564519627BA0EE300CC35F7 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		B564519827BA0F2900CC35F7 /* EvirTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvirTheme.swift; sourceTree = "<group>"; };
 		B564519A27BA0F5B00CC35F7 /* ContinentalTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentalTheme.swift; sourceTree = "<group>"; };
 		B564519E27BA102700CC35F7 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		B56451A127BA591000CC35F7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B57F5C0127C4C50400975C42 /* FakeDataGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeDataGenerator.swift; sourceTree = "<group>"; };
+		B57F5C0427C4C70C00975C42 /* InspectedAssetDomainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectedAssetDomainModel.swift; sourceTree = "<group>"; };
+		B57F5C0727C4C84900975C42 /* lastInspection.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lastInspection.json; sourceTree = "<group>"; };
+		B57F5C0927C4CD9100975C42 /* LastInspectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastInspectionViewModel.swift; sourceTree = "<group>"; };
 		B5B7B9BB27BE3D7B004DCF06 /* LastInspectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastInspectionViewController.swift; sourceTree = "<group>"; };
 		B5B7B9BD27BE4CB1004DCF06 /* NoAssetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoAssetCell.swift; sourceTree = "<group>"; };
 		B5B7B9BE27BE4CB1004DCF06 /* NoAssetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoAssetCell.xib; sourceTree = "<group>"; };
 		B5D583E627BCA7FB00896022 /* SelectMethodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMethodCell.swift; sourceTree = "<group>"; };
 		B5D583EA27BCAEF100896022 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		B5D583EC27BCC96500896022 /* LocalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStore.swift; sourceTree = "<group>"; };
+		B5DE9F8127C394480032D809 /* InspectionInformationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionInformationCell.swift; sourceTree = "<group>"; };
 		B5E3065C27BF9DE0002BA188 /* ZonarEvirExample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ZonarEvirExample.xcdatamodel; sourceTree = "<group>"; };
 		B5E3066627BF9FED002BA188 /* Asset+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Asset+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B5E3066727BF9FED002BA188 /* Asset+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Asset+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -181,6 +195,29 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		B57F5C0027C4B45B00975C42 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				B57F5C0727C4C84900975C42 /* lastInspection.json */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		B57F5C0327C4C5E000975C42 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		B57F5C0627C4C71200975C42 /* InspectedAsset */ = {
+			isa = PBXGroup;
+			children = (
+				B57F5C0427C4C70C00975C42 /* InspectedAssetDomainModel.swift */,
+			);
+			path = InspectedAsset;
+			sourceTree = "<group>";
+		};
 		B5B7B9BA27BE3D5E004DCF06 /* LastInpsection */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,10 +229,13 @@
 		B5D583E827BCAD3300896022 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				B57F5C0327C4C5E000975C42 /* Remote */,
+				B57F5C0027C4B45B00975C42 /* json */,
 				B5E3D56D27BCEC75000185F1 /* Asset */,
 				B5E3D56C27BCEC6A000185F1 /* Config */,
 				B5D583E927BCAD5400896022 /* Persistence */,
 				B5E3065B27BF9DE0002BA188 /* ZonarEvirExample.xcdatamodeld */,
+				B57F5C0127C4C50400975C42 /* FakeDataGenerator.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -317,6 +357,7 @@
 		B5F3DAAF27B68C990058D7B4 /* DomainModel */ = {
 			isa = PBXGroup;
 			children = (
+				B57F5C0627C4C71200975C42 /* InspectedAsset */,
 				B5E3D57D27BCFC35000185F1 /* Asset */,
 				B5E3D57A27BCF728000185F1 /* Config */,
 			);
@@ -327,6 +368,7 @@
 			isa = PBXGroup;
 			children = (
 				B5E3D58027BD008B000185F1 /* HomeViewModel.swift */,
+				B57F5C0927C4CD9100975C42 /* LastInspectionViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -351,6 +393,9 @@
 				B5D583E627BCA7FB00896022 /* SelectMethodCell.swift */,
 				B5B7B9BD27BE4CB1004DCF06 /* NoAssetCell.swift */,
 				B5B7B9BE27BE4CB1004DCF06 /* NoAssetCell.xib */,
+				B5DE9F8127C394480032D809 /* InspectionInformationCell.swift */,
+				B54AE75027C47A43000C06B8 /* InspectionZoneCell.swift */,
+				B54AE75227C482C4000C06B8 /* PastInspectionAcknowledgeCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -445,6 +490,7 @@
 				B5B7B9C027BE4CB1004DCF06 /* NoAssetCell.xib in Resources */,
 				B5F3DAA027B6869F0058D7B4 /* Assets.xcassets in Resources */,
 				B5F3DA9B27B6869F0058D7B4 /* Main.storyboard in Resources */,
+				B57F5C0827C4C84900975C42 /* lastInspection.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,7 +547,9 @@
 				B5E3065D27BF9DE0002BA188 /* ZonarEvirExample.xcdatamodeld in Sources */,
 				B5F3DABC27BA05F30058D7B4 /* LastInspectionHomeView.swift in Sources */,
 				B5E3D57F27BCFC41000185F1 /* AssetDomainModel.swift in Sources */,
+				B5DE9F8227C394480032D809 /* InspectionInformationCell.swift in Sources */,
 				B5D583E727BCA7FB00896022 /* SelectMethodCell.swift in Sources */,
+				B57F5C0527C4C70C00975C42 /* InspectedAssetDomainModel.swift in Sources */,
 				B5346ECE27BBABE100189687 /* UserName.swift in Sources */,
 				B564519B27BA0F5B00CC35F7 /* ContinentalTheme.swift in Sources */,
 				B5F3DAB727B6AD540058D7B4 /* HomeViewController.swift in Sources */,
@@ -511,14 +559,18 @@
 				B5E3067127BFA50B002BA188 /* Config+CoreDataProperties.swift in Sources */,
 				B507E31E27BAB49D00456354 /* NavigationBarCustom.swift in Sources */,
 				B564519727BA0EE300CC35F7 /* ThemeManager.swift in Sources */,
+				B54AE75327C482C4000C06B8 /* PastInspectionAcknowledgeCell.swift in Sources */,
 				B5E3D58127BD008B000185F1 /* HomeViewModel.swift in Sources */,
 				B5E3D56F27BCEC84000185F1 /* ConfigRepository.swift in Sources */,
 				B5E3D57C27BCF738000185F1 /* ConfigDomainModel.swift in Sources */,
 				B564519927BA0F2900CC35F7 /* EvirTheme.swift in Sources */,
 				B5E3067027BFA50B002BA188 /* Config+CoreDataClass.swift in Sources */,
+				B57F5C0A27C4CD9100975C42 /* LastInspectionViewModel.swift in Sources */,
 				B5F3DABA27B6B0A70058D7B4 /* AssetCardCell.swift in Sources */,
+				B57F5C0227C4C50400975C42 /* FakeDataGenerator.swift in Sources */,
 				B5E3D57927BCF1D4000185F1 /* AssetRepository.swift in Sources */,
 				B5D583ED27BCC96500896022 /* LocalStore.swift in Sources */,
+				B54AE75127C47A43000C06B8 /* InspectionZoneCell.swift in Sources */,
 				B5E3066827BF9FED002BA188 /* Asset+CoreDataProperties.swift in Sources */,
 				B5F3DA9427B6869F0058D7B4 /* AppDelegate.swift in Sources */,
 				B507E32027BAB87300456354 /* HeaderBar.swift in Sources */,
