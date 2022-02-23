@@ -10,6 +10,7 @@ import UIKit
 class InspectionComponentCell: UITableViewCell {
     var inspectedZone: InspectedZone!
     @IBOutlet weak var zoneNameLabel: UILabel!
+    
     @IBOutlet weak var imageDefectType: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
