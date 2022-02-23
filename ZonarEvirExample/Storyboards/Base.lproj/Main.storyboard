@@ -427,8 +427,12 @@
                                                     <color key="textColor" red="0.44031721350000003" green="0.44396263359999999" blue="0.44828492399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Inspected by Nhan Huu Ta Nhan Huu Ta Nhan Huu Ta Nhan Huu Ta Nhan Huu Ta" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bkf-aI-oFr" userLabel="InspectedByLabel">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Inspected by: " lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bkf-aI-oFr" userLabel="InspectedByLabel">
                                                     <rect key="frame" x="20" y="41.5" width="384" height="43"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="384" id="9Cl-jL-YxG"/>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="k5M-Xv-sHM"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                                     <color key="textColor" red="0.44031721350000003" green="0.44396263359999999" blue="0.44828492399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -445,8 +449,11 @@
                                                     <color key="textColor" red="0.44031721350000003" green="0.44396263359999999" blue="0.44828492399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Last reviewed by: Nhan Huu Ta Nhan Huu Ta Nhan Huu Ta" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRQ-AX-RAq" userLabel="LastReviewedByLabel">
-                                                    <rect key="frame" x="20" y="157.5" width="384" height="43"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Last reviewed by: " lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRQ-AX-RAq" userLabel="LastReviewedByLabel">
+                                                    <rect key="frame" x="20" y="151" width="384" height="43"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="Vo0-65-Bfq"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                                     <color key="textColor" red="0.44031721350000003" green="0.44396263359999999" blue="0.44828492399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -528,6 +535,13 @@
                                                 <constraint firstItem="wmF-xM-jvN" firstAttribute="leading" secondItem="w7a-D1-6SC" secondAttribute="leading" constant="20" symbolic="YES" id="z3S-tK-AHi"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="durationLabel" destination="Vhb-PO-iOF" id="WfR-2R-ZZk"/>
+                                            <outlet property="inspectedByLabel" destination="Bkf-aI-oFr" id="75P-nb-imG"/>
+                                            <outlet property="inspectionTypeLabel" destination="Bkf-aI-oFr" id="tTJ-36-00B"/>
+                                            <outlet property="lastReviewedByLabel" destination="VRQ-AX-RAq" id="F7Z-VV-5Am"/>
+                                            <outlet property="timestampLabel" destination="wmF-xM-jvN" id="Bq3-Oy-PIn"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="InspectionComponentCell" id="dqx-2G-5qO" customClass="InspectionComponentCell" customModule="ZonarEvirExample">
                                         <rect key="frame" x="0.0" y="328.5" width="414" height="62"/>

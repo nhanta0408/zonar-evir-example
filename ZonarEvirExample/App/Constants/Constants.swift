@@ -23,3 +23,11 @@ enum DefectTypeInt: Int {
     case minor = 127
     case major = 255
 }
+
+enum LastInspectedViewString: String {
+    case inspectionType = "Inspection Type: "
+    case inspectedBy = "Inspected by: "
+    case timestamp = "Timestamp: "
+    case duration = "Duration: "
+    case lastReviewedBy = "Last reviewed by: "
+}

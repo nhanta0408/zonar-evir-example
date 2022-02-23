@@ -29,6 +29,8 @@ extension LastInspectionViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "InspectionInformationCell", for: indexPath) as! InspectionInformationCell
+            cell.currentLastInspection = lastInspectionViewModel.currentLastInspectedAsset
+            cell.setupUI()
             return cell
         }
         else if indexPath.row == numberOfRow - 1 {

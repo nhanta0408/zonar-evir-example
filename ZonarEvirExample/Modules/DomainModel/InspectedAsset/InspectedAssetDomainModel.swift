@@ -9,6 +9,11 @@ import Foundation
 struct InspectedAsset: Codable {
     var inspectionId: UUID
     var assetId: UUID
+    var inspectionType: String
+    var inspectedBy: String
+    var timestamp: String //Se chuyen thanh DateTime sau
+    var duration: String
+    var lastReviewedBy: String
     var inspectedZones: [InspectedZone]
     
 }
@@ -25,6 +30,11 @@ class InspectedAssetDomainModel: InspectedAssetDomainModelProtocol {
         //Fake data
         return FakeDataGenerator.shared.getSampleInspectedAsset() ?? InspectedAsset(inspectionId: UUID(),
                                                                                     assetId: UUID(),
+                                                                                    inspectionType: "Unknown",
+                                                                                    inspectedBy: "Unknown",
+                                                                                    timestamp: "Unknown",
+                                                                                    duration: "Unknown",
+                                                                                    lastReviewedBy: "Unknown",
                                                                                     inspectedZones: [
                                                                                         InspectedZone(name: "Test", severity: 127)
                                                                                     ])

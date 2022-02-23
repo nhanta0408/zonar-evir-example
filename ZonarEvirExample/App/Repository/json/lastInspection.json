@@ -1,6 +1,11 @@
 {
   "inspectionId": "2C8A124B-C011-4AE7-AC39-6ECCA7E3803E",
   "assetId": "02A837C0-B2F6-45A1-BA19-85ADDF13AD1A",
+  "inspectionType": "Pre-Trip",
+  "inspectedBy": "Nhan Huu Ta",
+  "timestamp": "02/08/2022 4:27 PM",
+  "duration": "458:57:55",
+  "lastReviewedBy": "Nhan Huu Ta",
   "inspectedZones": [
     {
       "name": "Engine",
