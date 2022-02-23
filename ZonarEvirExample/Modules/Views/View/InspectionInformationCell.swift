@@ -26,9 +26,9 @@ class InspectionInformationCell: UITableViewCell {
     }
     func setupUI(){
         inspectionTypeLabel.text = LastInspectedViewString.inspectionType.rawValue + currentLastInspection.inspectionType
-        inspectedByLabel.text = LastInspectedViewString.inspectedBy.rawValue + LastInspectedViewString.inspectedBy.rawValue + LastInspectedViewString.inspectedBy.rawValue + currentLastInspection.inspectedBy
+        inspectedByLabel.text = LastInspectedViewString.inspectedBy.rawValue + currentLastInspection.inspectedBy
         timestampLabel.text = LastInspectedViewString.timestamp.rawValue + currentLastInspection.timestamp
         durationLabel.text = LastInspectedViewString.duration.rawValue + currentLastInspection.duration
-        lastReviewedByLabel.text = LastInspectedViewString.lastReviewedBy.rawValue + LastInspectedViewString.lastReviewedBy.rawValue  + currentLastInspection.lastReviewedBy
+        lastReviewedByLabel.text = LastInspectedViewString.lastReviewedBy.rawValue +  currentLastInspection.lastReviewedBy
     }
 }

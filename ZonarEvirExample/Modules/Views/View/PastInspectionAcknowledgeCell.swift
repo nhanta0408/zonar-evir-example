@@ -11,11 +11,24 @@ class PastInspectionAcknowledgeCell: UITableViewCell {
 
     @IBOutlet weak var acknowledgeLabel: UILabel!
     var content = "Sample content"
-    var inspectionType = "Pre-Trip"
-    var inspector = "Nhan Huu Ta Nhan Huu Ta"
+    var inspectionType = "Pre-Trip" //Sample
+    var inspector = "Nhan Huu Ta Nhan Huu Ta"   //Sample
+    var currentInspectedAsset: InspectedAsset!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+    }
+
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
+    }
+    func updateUI(){
+        inspectionType = currentInspectedAsset.inspectionType
+        inspector = currentInspectedAsset.lastReviewedBy
+        formatFontWeight()
+    }
+    private func formatFontWeight(){
         content = "This \(inspectionType) inspection was certified to be true and accurate by \(inspector)"
         acknowledgeLabel.text = content
         let contentLength = content.count
@@ -30,12 +43,6 @@ class PastInspectionAcknowledgeCell: UITableViewCell {
 
         // set the attributed string to the UILabel object
         acknowledgeLabel.attributedText = amountText
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
 }

@@ -35,6 +35,8 @@ extension LastInspectionViewController: UITableViewDataSource{
         }
         else if indexPath.row == numberOfRow - 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "PastInspectionAcknowledgeCell", for: indexPath) as! PastInspectionAcknowledgeCell
+            cell.currentInspectedAsset = lastInspectionViewModel.currentLastInspectedAsset
+            cell.updateUI()
             return cell
         }
         else {
