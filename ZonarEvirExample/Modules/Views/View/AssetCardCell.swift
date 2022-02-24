@@ -33,7 +33,7 @@ class AssetCardCell: UITableViewCell {
         setupUI()
     }
     private func setupUI(){
-        lastInpsectionHomeView = LastInspectionHomeView(frame: CGRect(x: 60, y: 200, width: self.frame.width, height: 100))
+        lastInpsectionHomeView = LastInspectionHomeView(frame: CGRect(x: 60, y: 190, width: self.frame.width, height: 100))
         lastInpsectionHomeView.trashIconButton = trashIconButton
         contentView.addSubview(lastInpsectionHomeView)
         readyLbl.transform =  CGAffineTransform(rotationAngle: CGFloat.pi / 2)
